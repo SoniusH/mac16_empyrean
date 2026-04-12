@@ -1,0 +1,45 @@
+
+
+*******************************************************************************
+* Report  : Quality of results                                                *
+* Command : analyze_qor -summary -precision 6 >                               *
+*         : /headless/Desktop/digitial/digital_env/Mult16/report/qor.rpt      *
+* Design  : mult16                                                            *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 6:52 PM, 12-Apr-26                                                *
+*******************************************************************************
+Timing
+---------------------------------------------
+Total negative slack:               0.000000
+No. of violating paths:             0.000000
+---------------------------------------------
+
+Cell Count
+---------------------------------------------
+Hierarchial cell count:                    0
+Hierarchial port count:                    0
+Leaf cell count:                        1028
+Sequential cell count:                     0
+Buffer cell count:                         0
+Inverter cell count:                      37
+---------------------------------------------
+
+Area
+---------------------------------------------
+Combinational area:               2898.000018
+Sequential area:                    0.000000
+Buffer cell area:                   0.000000
+Inverter cell area:                39.960002
+Net area:                           0.000000
+---------------------------------------------
+Cell area:                        2898.000018
+Design area:                      2898.000018
+
+Design Rules
+---------------------------------------------
+Total number of nets:                   1060
+Max transition violations:                 0
+Max capacitance violations:                0
+Max fanout violations:                     0
+---------------------------------------------
+

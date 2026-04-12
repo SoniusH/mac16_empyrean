@@ -1,0 +1,57 @@
+INFO:    Vectorless flow is adopted in computing power. (PA_I_016)
+
+
+*******************************************************************************
+* Report  : Power                                                             *
+* Command : analyze_power >                                                   *
+*         : /headless/Desktop/digitial/digital_env/Mult16/report/power.rpt    *
+* Design  : mult16                                                            *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 6:52 PM, 12-Apr-26                                                *
+*******************************************************************************
+*******************************************************************************
+* MAX Power Analysis                                                          *
+* Environment Library  : ics55_LLSC_H9CR_ff_cbest_1p32_125                    *
+* Operating Conditions : ETSCA_N55_H9BR_ff_mos_Cbest_1.32_125                 *
+* Wire Load Library    : ics55_LLSC_H9CR_ff_cbest_1p32_125                    *
+* Wire Load Model Mode : top                                                  *
+* Wire Load Model From : default                                              *
+* Wire Load Model On Top Design :                                             *
+*******************************************************************************
+*******************************************************************************
+* Legend :                                                                    *
+* Switching power : power dissipated when charging or discharging capacitors  *
+* Internal power  : power dissipated within a cell                            *
+* X-trans. power  : power dissipated during X-state transitions               *
+* Glitch power    : power dissipated during detectable glitches on the nets   *
+* Dynamic power   : switching power + internal power                          *
+* Static power    : reverse-biased junction leakage + subthreshold leakage    *
+* Total power     : dynamic power + static power                              *
+*******************************************************************************
+Associated Library(s):
+    ics55_LLSC_H9CR_ff_cbest_1p32_125
+
+
+                    Summary of Power Consumption (report_unit_type : power_sum; unit: Watt)
+---------------------------------------------------------------------------------------------------------
+ Power Category          Internal   Switching   Dynamic(% Tot.)    Static(% Tot.)      Total(% Tot. Pwr.)
+---------------------------------------------------------------------------------------------------------
+ Total Power             7.241e-05  1.947e-04  2.671e-04( 73.93%)  9.416e-05( 26.07%)  3.612e-04(100.00%)
+    - Clocktree          0.000e+00  0.000e+00  0.000e+00(  0.00%)  0.000e+00(  0.00%)  0.000e+00(  0.00%)
+    - Register           0.000e+00  0.000e+00  0.000e+00(  0.00%)  0.000e+00(  0.00%)  0.000e+00(  0.00%)
+    - Sequential         0.000e+00  0.000e+00  0.000e+00(  0.00%)  0.000e+00(  0.00%)  0.000e+00(  0.00%)
+    - Black_Box          0.000e+00  0.000e+00  0.000e+00(  0.00%)  0.000e+00(  0.00%)  0.000e+00(  0.00%)
+    - Memory             0.000e+00  0.000e+00  0.000e+00(  0.00%)  0.000e+00(  0.00%)  0.000e+00(  0.00%)
+    - Pad                0.000e+00  0.000e+00  0.000e+00(  0.00%)  0.000e+00(  0.00%)  0.000e+00(  0.00%)
+    - Combinational      7.241e-05  1.947e-04  2.671e-04( 73.93%)  9.416e-05( 26.07%)  3.612e-04(100.00%)
+
+          Power Consumption by Design (report_unit_type : power_sum; unit: Watt)
+------------------------------------------------------------------------------------
+ Instance Name (Design Name)
+  Level   Internal  Switching   X-trans.     Glitch    Dynamic     Static      Total
+          (% Dyn.)   (% Dyn.)   (% Dyn.)   (% Dyn.)   (% Tot.)   (% Tot.)           
+------------------------------------------------------------------------------------
+ mult16 (mult16)
+      0  7.241e-05  1.947e-04  0.000e+00  0.000e+00  2.671e-04  9.416e-05  3.612e-04
+         ( 27.11%)  ( 72.89%)  (  0.00%)  (  0.00%)  ( 73.93%)  ( 26.07%)           
+------------------------------------------------------------------------------------

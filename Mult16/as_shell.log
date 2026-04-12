@@ -1,0 +1,673 @@
+       /****************************************************************/
+       /*                           AltiSyn                            */
+       /*                        AltiSyn-Power                         */
+       /*                         AltiSyn-DFT                          */
+       /*                                                              */
+       /*            Platform: as_shell (Compiled by RHEL 7 64bit)     */
+       /*            Compilation Time: 5:39 PM, 29-Jun-25              */
+       /*            Version: 2506_4e37.rel                            */
+       /*                                                              */
+       /*                         ZeniSyn                              */
+       /*          Copyright (c), 2025. All Rights Reserved.           */
+       /*                                                              */
+       /* This program  contains  the  proprietary  and   confidential */
+       /* information of ZeniSyn.  Any disclosure or reproduction of   */
+       /* this program, without the prior consent of  ZeniSyn  is      */
+       /* strictly prohibited.                                         */
+       /*                                                              */
+       /*             Invocation Time:  6:52 PM, 12-Apr-26             */
+       /*                                                              */
+       /****************************************************************/
+CMD:     source
+         /headless/Desktop/digitial/digital_env/software/AltiSyn/altisyn_z2506_4e37.rel/altisyn/altisyn_z2506_4e37.rel/lib/tcl/history.tcl
+INFO:    Sourcing file
+         /headless/Desktop/digitial/digital_env/software/AltiSyn/altisyn_z2506_4e37.rel/altisyn/altisyn_z2506_4e37.rel/lib/tcl/history.tcl.
+         (CMD_INFO_004)
+0
+CMD:     source run.tcl
+INFO:    Sourcing file /headless/Desktop/digitial/digital_env/Mult16/run.tcl.
+         (CMD_INFO_004)
+INFO:    Create a new user variable 'script_dir' =
+         /headless/Desktop/digitial/digital_env/Mult16. (CMD_INFO_005)
+INFO:    Create a new user variable 'case_dir' =
+         /headless/Desktop/digitial/digital_env/Mult16. (CMD_INFO_005)
+INFO:    Create a new user variable 'lib_dir' =
+         ../Common/ics55_LLSC_H9CR_0917/liberty/lib. (CMD_INFO_005)
+INFO:    Create a new user variable 'src_dir' =
+         /headless/Desktop/digitial/digital_env/Mult16/rtl. (CMD_INFO_005)
+INFO:    Create a new user variable 'rpt_dir' =
+         /headless/Desktop/digitial/digital_env/Mult16/report. (CMD_INFO_005)
+INFO:    Create a new user variable 'design' = mult16. (CMD_INFO_005)
+CMD:     set search_path [concat $search_path $lib_dir]
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Mult16/../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ff_cbest_1p32_125' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Mult16/../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ff_rcbest_1p08_125' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Mult16/../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ff_rcbest_1p32_m40' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Mult16/../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ss_cworst_1p08_m40' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Mult16/../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ss_rcworst_1p08_125' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Mult16/../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ss_rcworst_1p2_m40' is compiled
+0
+CMD:     compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Mult16/../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_typ_tt_1p2_25' is compiled
+0
+CMD:     set target_lib { ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib
+         ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib
+         ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib
+         ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib
+         ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib
+         ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib
+         ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib }
+INFO:    Library 'ics55_LLSC_H9CR_ff_cbest_1p32_125' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ff_rcbest_1p08_125' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ff_rcbest_1p32_m40' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ss_cworst_1p08_m40' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ss_rcworst_1p08_125' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ss_rcworst_1p2_m40' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_typ_tt_1p2_25' is compiled
+INFO:    Library
+         'multi_target_lib:ics55_LLSC_H9CR_ff_cbest_1p32_125:ics55_LLSC_H9CR_ff_rcbest_1p08_125:ics55_LLSC_H9CR_ff_rcbest_1p32_m40:ics55_LLSC_H9CR_ss_cworst_1p08_m40:ics55_LLSC_H9CR_ss_rcworst_1p08_125:ics55_LLSC_H9CR_ss_rcworst_1p2_m40:ics55_LLSC_H9CR_typ_tt_1p2_25'
+         is compiled
+INFO:    The merge of multiple libraries '
+         ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib
+         ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib
+         ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib
+         ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib
+         ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib
+         ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib
+         ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib ' is set to target_lib!
+0
+CMD:     set link_priority "* ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm
+         ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm
+         ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm
+         ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm
+         ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm
+         ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm
+         ics55_LLSC_H9CR_typ_tt_1p2_25_nldm" 
+INFO:    link_priority is changed! (CMD_INFO_007)
+0
+CMD:     read_design -format verilog "$src_dir/mult16.v"
+INFO:    Read design
+         '/headless/Desktop/digitial/digital_env/Mult16/rtl/mult16.v'
+         (PSR_13608)
+0
+CMD:     set current_design $design
+0
+CMD:     link_design
+INFO:    Analyze Module 'mult16'
+         (/headless/Desktop/digitial/digital_env/Mult16/rtl/mult16.v:1)
+         (PSR_19360)
+0
+CMD:     make_unique
+0
+CMD:     write_design -format verilog -hierarchy -o $rpt_dir/pre_mapped.v
+0
+CMD:     source $script_dir/sdc/mult16.sdc
+INFO:    Sourcing file
+         /headless/Desktop/digitial/digital_env/Mult16/sdc/mult16.sdc.
+         (CMD_INFO_004)
+CMD:     set_units -time ns -resistance kOhm -capacitance pF -voltage V
+         -current mA
+0
+CMD:     set_operating_conditions -max ETSCA_N55_H9BR_ss_mos_RCworst_1.08_125
+         -max_library ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm -min
+         ETSCA_N55_H9BR_ff_mos_RCbest_1.32_-40 -min_library
+         ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm
+WARNING: Cannot find object matching search pattern
+         'ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm'! (GET_WARN_012)
+WARNING: Cannot find operating condition
+         "ETSCA_N55_H9BR_ss_mos_RCworst_1.08_125" for maximal delay analysis!
+WARNING: Cannot find object matching search pattern
+         'ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm'! (GET_WARN_012)
+WARNING: Cannot find operating condition
+         "ETSCA_N55_H9BR_ff_mos_RCbest_1.32_-40" for minimal delay analysis!
+0
+CMD:     get_ports {result[31]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[31]}]
+0
+CMD:     get_ports {result[30]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[30]}]
+0
+CMD:     get_ports {result[29]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[29]}]
+0
+CMD:     get_ports {result[28]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[28]}]
+0
+CMD:     get_ports {result[27]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[27]}]
+0
+CMD:     get_ports {result[26]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[26]}]
+0
+CMD:     get_ports {result[25]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[25]}]
+0
+CMD:     get_ports {result[24]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[24]}]
+0
+CMD:     get_ports {result[23]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[23]}]
+0
+CMD:     get_ports {result[22]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[22]}]
+0
+CMD:     get_ports {result[21]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[21]}]
+0
+CMD:     get_ports {result[20]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[20]}]
+0
+CMD:     get_ports {result[19]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[19]}]
+0
+CMD:     get_ports {result[18]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[18]}]
+0
+CMD:     get_ports {result[17]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[17]}]
+0
+CMD:     get_ports {result[16]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[16]}]
+0
+CMD:     get_ports {result[15]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[15]}]
+0
+CMD:     get_ports {result[14]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[14]}]
+0
+CMD:     get_ports {result[13]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[13]}]
+0
+CMD:     get_ports {result[12]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[12]}]
+0
+CMD:     get_ports {result[11]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[11]}]
+0
+CMD:     get_ports {result[10]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[10]}]
+0
+CMD:     get_ports {result[9]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[9]}]
+0
+CMD:     get_ports {result[8]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[8]}]
+0
+CMD:     get_ports {result[7]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[7]}]
+0
+CMD:     get_ports {result[6]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[6]}]
+0
+CMD:     get_ports {result[5]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[5]}]
+0
+CMD:     get_ports {result[4]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[4]}]
+0
+CMD:     get_ports {result[3]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[3]}]
+0
+CMD:     get_ports {result[2]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[2]}]
+0
+CMD:     get_ports {result[1]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[1]}]
+0
+CMD:     get_ports {result[0]}
+0
+CMD:     set_load -pin_load 0.025 [get_ports {result[0]}]
+0
+CMD:     create_clock -name vclk -period 20
+0
+CMD:     get_ports {a[15]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[15]}]
+0
+CMD:     get_ports {a[14]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[14]}]
+0
+CMD:     get_ports {a[13]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[13]}]
+0
+CMD:     get_ports {a[12]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[12]}]
+0
+CMD:     get_ports {a[11]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[11]}]
+0
+CMD:     get_ports {a[10]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[10]}]
+0
+CMD:     get_ports {a[9]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[9]}]
+0
+CMD:     get_ports {a[8]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[8]}]
+0
+CMD:     get_ports {a[7]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[7]}]
+0
+CMD:     get_ports {a[6]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[6]}]
+0
+CMD:     get_ports {a[5]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[5]}]
+0
+CMD:     get_ports {a[4]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[4]}]
+0
+CMD:     get_ports {a[3]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[3]}]
+0
+CMD:     get_ports {a[2]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[2]}]
+0
+CMD:     get_ports {a[1]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[1]}]
+0
+CMD:     get_ports {a[0]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {a[0]}]
+0
+CMD:     get_ports {b[15]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[15]}]
+0
+CMD:     get_ports {b[14]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[14]}]
+0
+CMD:     get_ports {b[13]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[13]}]
+0
+CMD:     get_ports {b[12]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[12]}]
+0
+CMD:     get_ports {b[11]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[11]}]
+0
+CMD:     get_ports {b[10]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[10]}]
+0
+CMD:     get_ports {b[9]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[9]}]
+0
+CMD:     get_ports {b[8]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[8]}]
+0
+CMD:     get_ports {b[7]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[7]}]
+0
+CMD:     get_ports {b[6]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[6]}]
+0
+CMD:     get_ports {b[5]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[5]}]
+0
+CMD:     get_ports {b[4]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[4]}]
+0
+CMD:     get_ports {b[3]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[3]}]
+0
+CMD:     get_ports {b[2]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[2]}]
+0
+CMD:     get_ports {b[1]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[1]}]
+0
+CMD:     get_ports {b[0]}
+0
+CMD:     set_input_delay -clock vclk -max 6 [get_ports {b[0]}]
+0
+CMD:     get_ports {result[31]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[31]}]
+0
+CMD:     get_ports {result[30]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[30]}]
+0
+CMD:     get_ports {result[29]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[29]}]
+0
+CMD:     get_ports {result[28]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[28]}]
+0
+CMD:     get_ports {result[27]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[27]}]
+0
+CMD:     get_ports {result[26]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[26]}]
+0
+CMD:     get_ports {result[25]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[25]}]
+0
+CMD:     get_ports {result[24]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[24]}]
+0
+CMD:     get_ports {result[23]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[23]}]
+0
+CMD:     get_ports {result[22]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[22]}]
+0
+CMD:     get_ports {result[21]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[21]}]
+0
+CMD:     get_ports {result[20]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[20]}]
+0
+CMD:     get_ports {result[19]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[19]}]
+0
+CMD:     get_ports {result[18]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[18]}]
+0
+CMD:     get_ports {result[17]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[17]}]
+0
+CMD:     get_ports {result[16]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[16]}]
+0
+CMD:     get_ports {result[15]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[15]}]
+0
+CMD:     get_ports {result[14]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[14]}]
+0
+CMD:     get_ports {result[13]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[13]}]
+0
+CMD:     get_ports {result[12]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[12]}]
+0
+CMD:     get_ports {result[11]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[11]}]
+0
+CMD:     get_ports {result[10]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[10]}]
+0
+CMD:     get_ports {result[9]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[9]}]
+0
+CMD:     get_ports {result[8]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[8]}]
+0
+CMD:     get_ports {result[7]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[7]}]
+0
+CMD:     get_ports {result[6]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[6]}]
+0
+CMD:     get_ports {result[5]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[5]}]
+0
+CMD:     get_ports {result[4]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[4]}]
+0
+CMD:     get_ports {result[3]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[3]}]
+0
+CMD:     get_ports {result[2]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[2]}]
+0
+CMD:     get_ports {result[1]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[1]}]
+0
+CMD:     get_ports {result[0]}
+0
+CMD:     set_output_delay -clock vclk -max 6 [get_ports {result[0]}]
+0
+0
+CMD:     optimize
+*******************************************************************************
+* Report  : Optimize Report                                                   *
+* Command : optimize                                                          *
+* Design  : mult16                                                            *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 6:52 PM, 12-Apr-26                                                *
+*******************************************************************************
+*******************************************************************************
+* Timing check / optimization:                                                *
+*  - max delay:                       check:  ON;  opt:  ON                   *
+*  - min delay:                       check: OFF;  opt: OFF                   *
+*  - clock path:                      check:  ON;  opt: OFF                   *
+*  - async path (recovery & removal): check: OFF;  opt: OFF                   *
+*  (use "sta_disable_recovery_removal_checks" var to turn on/off async check) *
+*  (use "optimize_path_to_async_pin" var to turn on/off async opt)            *
+*                                                                             *
+* DRC check / fixing:                                                         *
+*  - data path:                       check:  ON;  fix:  ON                   *
+*  - clock path:                      check: OFF;  fix: OFF                   *
+*  - async path (recovery & removal): check:  ON;  fix:  ON                   *
+*  (use "sta_disable_async_drc_checks" var to turn on/off check)              *
+*  (use 'set_drc_option -data_path | -clock_path | -async_path' cmd           *
+*   to control fixing)                                                        *
+*******************************************************************************
+
+Beginning Hierarchical Optimization
+===================================
+
+
+  Optimizing Design mult16 (1 1)
+
+      Performing Logic Optimization
+
+
+Beginning Incremental Optimization (High Mapping Effort)
+==================================
+
+
+                                   LEAKAGE     WORST MAX   WORST MIN  END
+ CPU TIME           AREA            POWER        SLACK       SLACK    POINT
+---------------------------------------------------------------------
+----------
+ 00h00m28s          2945.88                      6.8368(0)               
+result[24]  
+ 00h00m28s          2945.88                      6.8368(0)               
+result[24]  
+ 00h00m28s          2945.88                      6.8368(0)               
+result[24]  
+ 00h00m28s          2945.16                      6.8368(0)               
+result[24]  
+ 00h00m28s          2935.08                      6.8404(0)               
+result[24]  
+ 00h00m28s          2933.28                      6.8404(0)               
+result[24]  
+ 00h00m28s          2930.76                      6.8404(0)               
+result[24]  
+ 00h00m28s          2926.08                      6.8404(0)               
+result[24]  
+ 00h00m28s          2923.92                      6.8442(0)               
+result[24]  
+ 00h00m28s          2923.20                      6.8442(0)               
+result[24]  
+ 00h00m28s          2921.40                      6.8442(0)               
+result[24]  
+ 00h00m28s          2918.16                      6.8451(0)               
+result[24]  
+ 00h00m28s          2916.36                      6.8198(0)               
+result[27]  
+ 00h00m28s          2912.76                      6.8156(0)               
+result[27]  
+ 00h00m28s          2912.40                      6.8140(0)               
+result[25]  
+ 00h00m28s          2908.08                      6.8140(0)               
+result[25]  
+ 00h00m28s          2906.64                      6.8139(0)               
+result[25]  
+ 00h00m28s          2906.28                      6.8139(0)               
+result[25]  
+ 00h00m28s          2905.92                      6.8139(0)               
+result[25]  
+ 00h00m28s          2905.56                      6.8139(0)               
+result[25]  
+ 00h00m28s          2905.20                      6.8139(0)               
+result[25]  
+ 00h00m28s          2904.84                      6.8139(0)               
+result[25]  
+ 00h00m28s          2904.12                      6.8139(0)               
+result[25]  
+ 00h00m28s          2899.08                      6.8139(0)               
+result[25]  
+ 00h00m28s          2898.00                      6.8139(0)               
+result[25]  
+ 00h00m28s          2898.00                      6.8139(0)               
+result[25]  
+ 00h00m28s          2898.00                      6.8139(0)               
+result[25]  
+ 00h00m28s          2898.00                      6.8139(0)               
+result[25]  
+ 00h00m28s          2898.00                      6.8139(0)               
+result[25]  
+ 00h00m28s          2898.00                      6.8139(0)               
+result[25]  
+
+Optimization Completed
+======================
+
+0
+CMD:     analyze_qor -summary -precision 6 > $rpt_dir/qor.rpt
+0
+CMD:     analyze_area > $rpt_dir/area.rpt
+0
+CMD:     analyze_resources > $rpt_dir/resource.rpt
+0
+CMD:     analyze_constraint -verbose -all_violators > $rpt_dir/cstr.rpt
+0
+CMD:     analyze_design > $rpt_dir/design.rpt
+0
+CMD:     analyze_power > $rpt_dir/power.rpt
+0
+CMD:     analyze_timing -delay_type max -input_pins -precision 6 >
+         $rpt_dir/timing.rpt
+0
+CMD:     write_design -format verilog -hierarchy -o $rpt_dir/mapped.v
+0
+CMD:     write_sdc > $rpt_dir/mult16.sdc
+0
+CMD:     run_stat > $rpt_dir/stat.log
+0
+CMD:     mem_usage > $rpt_dir/memusage.rpt
+0
+0

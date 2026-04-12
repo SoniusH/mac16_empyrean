@@ -1,0 +1,101 @@
+
+
+*******************************************************************************
+* Report  : Timing                                                            *
+* Command : analyze_timing -delay_type max -input_pins -precision 6           *
+*         : > $rpt_dir/timing.rpt                                            *
+* Design  : mult16                                                            *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 6:52 PM, 12-Apr-26                                                *
+*******************************************************************************
+*******************************************************************************
+* MAX Timing Analysis                                                         *
+* Analysis type : bc_wc                                                       *
+* Environment Library : ics55_LLSC_H9CR_ff_cbest_1p32_125                     *
+* Operating Conditions: ETSCA_N55_H9BR_ff_mos_Cbest_1.32_125                  *
+* Wire Load Library : ics55_LLSC_H9CR_ff_cbest_1p32_125                       *
+* Wire Load Model Mode:          top                                          *
+* Wire Load Model From:          default                                      *
+* Wire Load Model On Top Design:                                              *
+*******************************************************************************
+*******************************************************************************
+* Legend :                                                                    *
+* re: rising-edge                                                             *
+* fe: falling-edge                                                            *
+* pl: positive-level                                                          *
+* nl: negative-level                                                          *
+* ': inverted clock                                                           *
+* *: delay is annotated from SDF                                              *
+* &: delay is from BBox/RC-tree                                               *
+* #: delay is set by command                                                  *
+*******************************************************************************
+
+
+*******************************************************************************
+* Report  : Critical paths for each clock group                               *
+* Design  : mult16                                                            *
+*******************************************************************************
+
+
+Beginpoint: b[1] (input port clocked by vclk)
+Endpoint: result[25] (output port clocked by vclk)
+Path Group: vclk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock vclk (re)                                  0.000000     0.000000
+clock tree delay (ideal)                         0.000000     0.000000
+input external delay                             6.000000     6.000000 F
+b[1] (input port)                                0.000000     6.000000 F
+u432/D (NAND4X0P5H9R)                            0.000000     6.000000 F
+u432/Y (NAND4X0P5H9R)                            0.037647     6.037647 R
+u451/AN (NOR2BX0P5H9R)                           0.000000     6.037647 R
+u451/Y (NOR2BX0P5H9R)                            0.039338     6.076985 R
+u452/B (XNOR2X0P5H9R)                            0.000000     6.076985 R
+u452/Y (XNOR2X0P5H9R)                            0.057869     6.134854 R
+u490/B (XOR3X0P5H9R)                             0.000000     6.134854 R
+u490/Y (XOR3X0P5H9R)                             0.097987     6.232841 R
+u500/B (XNOR3X0P5H9R)                            0.000000     6.232841 R
+u500/Y (XNOR3X0P5H9R)                            0.088300     6.321141 R
+u565/B (XNOR3X0P5H9R)                            0.000000     6.321141 R
+u565/Y (XNOR3X0P5H9R)                            0.075689     6.396830 R
+u566/B0N (AOI21BX0P5H9R)                         0.000000     6.396830 R
+u566/Y (AOI21BX0P5H9R)                           0.061541     6.458370 R
+u573/A1 (AOI211X0P5H9R)                          0.000000     6.458370 R
+u573/Y (AOI211X0P5H9R)                           0.058470     6.516840 F
+u575/B0 (AOI211X0P5H9R)                          0.000000     6.516840 F
+u575/Y (AOI211X0P5H9R)                           0.075588     6.592428 R
+u1393/B0 (AOI21X0P5H9R)                          0.000000     6.592428 R
+u1393/Y (AOI21X0P5H9R)                           0.026293     6.618721 F
+u1394/B0 (AOI211X0P5H9R)                         0.000000     6.618721 F
+u1394/Y (AOI211X0P5H9R)                          0.041736     6.660457 R
+u1395/B (NOR2X0P5H9R)                            0.000000     6.660457 R
+u1395/Y (NOR2X0P5H9R)                            0.042997     6.703453 F
+u1406/A0 (AOI21X0P5H9R)                          0.000000     6.703453 F
+u1406/Y (AOI21X0P5H9R)                           0.029995     6.733449 R
+u1407/C (OR3X0P5H9R)                             0.000000     6.733449 R
+u1407/Y (OR3X0P5H9R)                             0.058562     6.792011 R
+u915/A1 (AOAI211X0P5H9R)                         0.000000     6.792011 R
+u915/ZN (AOAI211X0P5H9R)                         0.074696     6.866707 F
+u1425/B (NAND2X0P5H9R)                           0.000000     6.866707 F
+u1425/Y (NAND2X0P5H9R)                           0.034251     6.900958 R
+u1426/B0 (OAI2XB1X0P5H9R)                        0.000000     6.900958 R
+u1426/Y (OAI2XB1X0P5H9R)                         0.039142     6.940100 F
+u964/A1 (AOI21X0P5H9R)                           0.000000     6.940100 F
+u964/Y (AOI21X0P5H9R)                            0.039482     6.979582 R
+u965/C (XOR3X0P5H9R)                             0.000000     6.979582 R
+u965/Y (XOR3X0P5H9R)                             0.206558     7.186140 R
+result[25] (output port)                         0.000000     7.186140 R
+data arrival time                                             7.186140
+
+clock vclk (re)                                 20.000000    20.000000
+clock tree delay (ideal)                         0.000000    20.000000
+output external delay                           -6.000000    14.000000
+data required time                                           14.000000
+------------------------------------------------------------------------
+data required time                                           14.000000
+data arrival time                                            -7.186140
+------------------------------------------------------------------------
+slack (MET)                                                   6.813861
+
