@@ -15,17 +15,22 @@ set search_path [concat $search_path $lib_dir]
 set file_list [glob -nocomplain $src_dir/*.v]
 
 # 编译库文件
-compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib
-compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib
+# compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib
+# compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib
 compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib
-compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib
+# compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib
 compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib
-compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib
+# compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib
 compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib
 
-set target_lib { ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib }
+# set target_lib { ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib }
 
-set link_priority "* ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm ics55_LLSC_H9CR_typ_tt_1p2_25_nldm" 
+# set link_priority "* ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm ics55_LLSC_H9CR_typ_tt_1p2_25_nldm" 
+
+set target_lib {ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib}
+
+set link_priority "* ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm" 
+
 
 
 read_design -format verilog $file_list

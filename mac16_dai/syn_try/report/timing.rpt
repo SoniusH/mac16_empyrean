@@ -3,7 +3,8 @@
 *******************************************************************************
 * Report  : Timing                                                            *
 * Command : analyze_timing -delay_type max -input_pins -precision 6           *
-*         : > $rpt_dir/timing.rpt                                            *
+*         : > $rpt_dir/timing.rpt
+                                            *
 * Design  : mac16                                                             *
 * Version : 2506_4e37.rel                                                     *
 * Date    : 2:34 PM, 13-Apr-26                                                *
