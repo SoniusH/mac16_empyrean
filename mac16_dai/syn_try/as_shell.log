@@ -1,0 +1,2314 @@
+       /****************************************************************/
+       /*                           AltiSyn                            */
+       /*                        AltiSyn-Power                         */
+       /*                         AltiSyn-DFT                          */
+       /*                                                              */
+       /*            Platform: as_shell (Compiled by RHEL 7 64bit)     */
+       /*            Compilation Time: 5:39 PM, 29-Jun-25              */
+       /*            Version: 2506_4e37.rel                            */
+       /*                                                              */
+       /*                         ZeniSyn                              */
+       /*          Copyright (c), 2025. All Rights Reserved.           */
+       /*                                                              */
+       /* This program  contains  the  proprietary  and   confidential */
+       /* information of ZeniSyn.  Any disclosure or reproduction of   */
+       /* this program, without the prior consent of  ZeniSyn  is      */
+       /* strictly prohibited.                                         */
+       /*                                                              */
+       /*             Invocation Time:  2:34 PM, 13-Apr-26             */
+       /*                                                              */
+       /****************************************************************/
+CMD:     source
+         /headless/Desktop/digitial/digital_env/software/AltiSyn/altisyn_z2506_4e37.rel/altisyn/altisyn_z2506_4e37.rel/lib/tcl/history.tcl
+INFO:    Sourcing file
+         /headless/Desktop/digitial/digital_env/software/AltiSyn/altisyn_z2506_4e37.rel/altisyn/altisyn_z2506_4e37.rel/lib/tcl/history.tcl.
+         (CMD_INFO_004)
+0
+CMD:     source run.tcl
+INFO:    Sourcing file /headless/Desktop/data/syn_try/run.tcl. (CMD_INFO_004)
+INFO:    Create a new user variable 'script_dir' =
+         /headless/Desktop/data/syn_try. (CMD_INFO_005)
+INFO:    Create a new user variable 'case_dir' =
+         /headless/Desktop/data/syn_try. (CMD_INFO_005)
+INFO:    Create a new user variable 'lib_dir' =
+         /headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib.
+         (CMD_INFO_005)
+INFO:    Create a new user variable 'src_dir' =
+         /headless/Desktop/data/syn_try/rtl. (CMD_INFO_005)
+INFO:    Create a new user variable 'rpt_dir' =
+         /headless/Desktop/data/syn_try/report. (CMD_INFO_005)
+INFO:    Create a new user variable 'design' = mac16. (CMD_INFO_005)
+CMD:     set search_path [concat $search_path $lib_dir]
+0
+INFO:    Create a new user variable 'file_list' =
+         /headless/Desktop/data/syn_try/rtl/spi_rx.v
+         /headless/Desktop/data/syn_try/rtl/compute_engine.v
+         /headless/Desktop/data/syn_try/rtl/mac16.v
+         /headless/Desktop/data/syn_try/rtl/mul8x8_booth_wallace_ks.v
+         /headless/Desktop/data/syn_try/rtl/spi_tx.v
+         /headless/Desktop/data/syn_try/rtl/sync_fifo.v. (CMD_INFO_005)
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ff_cbest_1p32_125' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ff_rcbest_1p08_125' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ff_rcbest_1p32_m40' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ss_cworst_1p08_m40' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ss_rcworst_1p08_125' is compiled
+0
+CMD:     compile_lib -f lib
+         ${lib_dir}/ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_ss_rcworst_1p2_m40' is compiled
+0
+CMD:     compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib
+INFO:    Reading file
+         '/headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib'.
+INFO:    Library 'ics55_LLSC_H9CR_typ_tt_1p2_25' is compiled
+0
+CMD:     set target_lib { ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib
+         ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib
+         ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib
+         ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib
+         ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib
+         ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib
+         ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib }
+INFO:    Library 'ics55_LLSC_H9CR_ff_cbest_1p32_125' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ff_rcbest_1p08_125' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ff_rcbest_1p32_m40' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ss_cworst_1p08_m40' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ss_rcworst_1p08_125' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_ss_rcworst_1p2_m40' is compiled
+INFO:    Library 'ics55_LLSC_H9CR_typ_tt_1p2_25' is compiled
+INFO:    Library
+         'multi_target_lib:ics55_LLSC_H9CR_ff_cbest_1p32_125:ics55_LLSC_H9CR_ff_rcbest_1p08_125:ics55_LLSC_H9CR_ff_rcbest_1p32_m40:ics55_LLSC_H9CR_ss_cworst_1p08_m40:ics55_LLSC_H9CR_ss_rcworst_1p08_125:ics55_LLSC_H9CR_ss_rcworst_1p2_m40:ics55_LLSC_H9CR_typ_tt_1p2_25'
+         is compiled
+INFO:    The merge of multiple libraries '
+         ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm.lib
+         ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm.lib
+         ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib
+         ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib
+         ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib
+         ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm.lib
+         ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib ' is set to target_lib!
+0
+CMD:     set link_priority "* ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm
+         ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm
+         ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm
+         ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm
+         ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm
+         ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm
+         ics55_LLSC_H9CR_typ_tt_1p2_25_nldm" 
+INFO:    link_priority is changed! (CMD_INFO_007)
+0
+CMD:     read_design -format verilog $file_list
+INFO:    Read design '/headless/Desktop/data/syn_try/rtl/spi_rx.v' (PSR_13608)
+INFO:    Read design '/headless/Desktop/data/syn_try/rtl/compute_engine.v'
+         (PSR_13608)
+INFO:    Read design '/headless/Desktop/data/syn_try/rtl/mac16.v' (PSR_13608)
+INFO:    Read design
+         '/headless/Desktop/data/syn_try/rtl/mul8x8_booth_wallace_ks.v'
+         (PSR_13608)
+INFO:    Read design '/headless/Desktop/data/syn_try/rtl/spi_tx.v' (PSR_13608)
+INFO:    Read design '/headless/Desktop/data/syn_try/rtl/sync_fifo.v'
+         (PSR_13608)
+0
+CMD:     set current_design $design
+0
+CMD:     link_design
+INFO:    Analyze Module 'mac16'
+         (/headless/Desktop/data/syn_try/rtl/mac16.v:8) (PSR_19360)
+INFO:    Analyze Module 'spi_rx'
+         (/headless/Desktop/data/syn_try/rtl/spi_rx.v:7) (PSR_19360)
+INFO:    Analyze Module 'compute_engine'
+         (/headless/Desktop/data/syn_try/rtl/compute_engine.v:7) (PSR_19360)
+INFO:    Analyze Module 'mul8x8_booth_wallace_ks'
+         (/headless/Desktop/data/syn_try/rtl/mul8x8_booth_wallace_ks.v:10)
+         (PSR_19360)
+INFO:    Analyze Module 'sync_fifo'
+         (/headless/Desktop/data/syn_try/rtl/sync_fifo.v:7) (PSR_19360)
+INFO:    Analyze Module 'spi_tx'
+         (/headless/Desktop/data/syn_try/rtl/spi_tx.v:7) (PSR_19360)
+0
+CMD:     make_unique
+0
+CMD:     write_design -format verilog -hierarchy -o $rpt_dir/pre_mapped.v
+0
+CMD:     source $script_dir/sdc/mac16.sdc
+INFO:    Sourcing file /headless/Desktop/data/syn_try/sdc/mac16.sdc.
+         (CMD_INFO_004)
+CMD:     set_units -time ns -resistance kOhm -capacitance pF -voltage V
+         -current mA
+0
+CMD:     set_operating_conditions \
+ERROR:   Failed to locate library file
+         "ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm" under the search paths.
+         (LIB_E_001)
+ERROR:   Failed to locate library file
+         "ics55_LLSC_H9CR_ff_rcbest_1p08_125_nldm" under the search paths.
+         (LIB_E_001)
+ERROR:   Failed to locate library file
+         "ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm" under the search paths.
+         (LIB_E_001)
+ERROR:   Failed to locate library file
+         "ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm" under the search paths.
+         (LIB_E_001)
+ERROR:   Failed to locate library file
+         "ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm" under the search paths.
+         (LIB_E_001)
+ERROR:   Failed to locate library file
+         "ics55_LLSC_H9CR_ss_rcworst_1p2_m40_nldm" under the search paths.
+         (LIB_E_001)
+ERROR:   Failed to locate library file "ics55_LLSC_H9CR_typ_tt_1p2_25_nldm"
+         under the search paths. (LIB_E_001)
+WARNING: Cannot find operating condition "" for maximal delay analysis!
+WARNING: Cannot find operating condition "" for minimal delay analysis!
+0
+ERROR:   invalid command name "-max" at line 9 of file
+         /headless/Desktop/data/syn_try/sdc/mac16.sdc while executing: -max
+         ETSCA_N55_H9BR_ss_mos_RCworst_1.08_125 \ (CMD_ERR_003)
+ERROR:   invalid command name "-max_library" at line 10 of file
+         /headless/Desktop/data/syn_try/sdc/mac16.sdc while executing:
+         -max_library ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm \
+         (CMD_ERR_003)
+ERROR:   invalid command name "-min" at line 11 of file
+         /headless/Desktop/data/syn_try/sdc/mac16.sdc while executing: -min
+         ETSCA_N55_H9BR_ff_mos_RCbest_1.32_-40 \ (CMD_ERR_003)
+ERROR:   invalid command name "-min_library" at line 12 of file
+         /headless/Desktop/data/syn_try/sdc/mac16.sdc while executing:
+         -min_library ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm (CMD_ERR_003)
+CMD:     get_ports clk
+0
+CMD:     create_clock -name clk -period 1 [get_ports clk]
+0
+CMD:     get_clocks clk
+0
+CMD:     set_clock_uncertainty 0.05 [get_clocks clk]
+0
+CMD:     get_ports rst_n
+0
+CMD:     set_false_path -from [get_ports rst_n]
+0
+CMD:     get_ports in_ready
+0
+CMD:     set_input_delay -max 0.3 -min 0.05 -clock clk [get_ports in_ready]
+WARNING: Argument '__handle__3' is ignored! (STA_W_323)
+WARNING: Cannot find object matching search pattern '0.05'! (GET_WARN_012)
+ERROR:   Cannot find pin/port: '0.05'! (STA_E_247)
+1
+CMD:     get_ports mode
+0
+CMD:     set_input_delay -max 0.3 -min 0.05 -clock clk [get_ports mode]
+WARNING: Argument '__handle__4' is ignored! (STA_W_323)
+WARNING: Cannot find object matching search pattern '0.05'! (GET_WARN_012)
+ERROR:   Cannot find pin/port: '0.05'! (STA_E_247)
+1
+CMD:     get_ports inA
+0
+CMD:     set_input_delay -max 0.3 -min 0.05 -clock clk [get_ports inA]
+WARNING: Argument '__handle__5' is ignored! (STA_W_323)
+WARNING: Cannot find object matching search pattern '0.05'! (GET_WARN_012)
+ERROR:   Cannot find pin/port: '0.05'! (STA_E_247)
+1
+CMD:     get_ports inB
+0
+CMD:     set_input_delay -max 0.3 -min 0.05 -clock clk [get_ports inB]
+WARNING: Argument '__handle__6' is ignored! (STA_W_323)
+WARNING: Cannot find object matching search pattern '0.05'! (GET_WARN_012)
+ERROR:   Cannot find pin/port: '0.05'! (STA_E_247)
+1
+CMD:     get_ports sum_out
+0
+CMD:     set_load -pin_load 0.025 [get_ports sum_out]
+0
+CMD:     get_ports out_ready
+0
+CMD:     set_load -pin_load 0.025 [get_ports out_ready]
+0
+CMD:     get_ports carry
+0
+CMD:     set_load -pin_load 0.025 [get_ports carry]
+0
+CMD:     get_ports sum_out
+0
+CMD:     set_output_delay -max 0.3 -min 0.05 -clock clk [get_ports sum_out]
+WARNING: Argument '__handle__10' is ignored!
+WARNING: Cannot find object matching search pattern '0.05'! (GET_WARN_012)
+ERROR:   Cannot find port/pin: '0.05'!
+1
+CMD:     get_ports out_ready
+0
+CMD:     set_output_delay -max 0.3 -min 0.05 -clock clk [get_ports out_ready]
+WARNING: Argument '__handle__11' is ignored!
+WARNING: Cannot find object matching search pattern '0.05'! (GET_WARN_012)
+ERROR:   Cannot find port/pin: '0.05'!
+1
+CMD:     get_ports carry
+0
+CMD:     set_output_delay -max 0.3 -min 0.05 -clock clk [get_ports carry]
+WARNING: Argument '__handle__12' is ignored!
+WARNING: Cannot find object matching search pattern '0.05'! (GET_WARN_012)
+ERROR:   Cannot find port/pin: '0.05'!
+1
+0
+CMD:     optimize
+*******************************************************************************
+* Report  : Optimize Report                                                   *
+* Command : optimize                                                          *
+* Design  : mac16                                                             *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 2:34 PM, 13-Apr-26                                                *
+*******************************************************************************
+*******************************************************************************
+* Timing check / optimization:                                                *
+*  - max delay:                       check:  ON;  opt:  ON                   *
+*  - min delay:                       check: OFF;  opt: OFF                   *
+*  - clock path:                      check:  ON;  opt: OFF                   *
+*  - async path (recovery & removal): check: OFF;  opt: OFF                   *
+*  (use "sta_disable_recovery_removal_checks" var to turn on/off async check) *
+*  (use "optimize_path_to_async_pin" var to turn on/off async opt)            *
+*                                                                             *
+* DRC check / fixing:                                                         *
+*  - data path:                       check:  ON;  fix:  ON                   *
+*  - clock path:                      check: OFF;  fix: OFF                   *
+*  - async path (recovery & removal): check:  ON;  fix:  ON                   *
+*  (use "sta_disable_async_drc_checks" var to turn on/off check)              *
+*  (use 'set_drc_option -data_path | -clock_path | -async_path' cmd           *
+*   to control fixing)                                                        *
+*******************************************************************************
+
+Beginning Hierarchical Optimization
+===================================
+
+
+  Optimizing Design mac16 (1 1)
+
+      Performing Logic Optimization
+
+
+Beginning Incremental Optimization (High Mapping Effort)
+==================================
+
+INFO:    Instance 'u1929' in design 'mac16' has constant input and is
+         resynthesized. (OPT_I_006)
+
+                                   LEAKAGE     WORST MAX   WORST MIN  END
+ CPU TIME           AREA            POWER        SLACK       SLACK    POINT
+---------------------------------------------------------------------
+----------
+ 00h00m28s          7137.36                     -0.5932(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7137.36                     -0.5831(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7135.20                     -0.5816(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7134.12                     -0.5816(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7136.28                     -0.5800(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7137.00                     -0.5785(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7137.72                     -0.5778(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7140.96                     -0.5777(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7144.92                     -0.5775(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7145.28                     -0.5775(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7147.80                     -0.5754(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7148.16                     -0.5754(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7152.12                     -0.5689(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7152.84                     -0.5689(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7149.60                     -0.5672(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7146.00                     -0.5632(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7145.28                     -0.5535(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7147.80                     -0.5464(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7147.44                     -0.5386(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7146.72                     -0.5386(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7148.88                     -0.5386(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7154.28                     -0.5356(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7155.36                     -0.5339(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7156.80                     -0.5309(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7156.44                     -0.5286(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7156.44                     -0.5286(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m28s          7157.88                     -0.5229(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7157.88                     -0.5210(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7159.32                     -0.5195(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7162.92                     -0.5195(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7165.44                     -0.4896(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7167.60                     -0.4875(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7169.76                     -0.4859(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7171.92                     -0.4856(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7174.08                     -0.4848(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7174.08                     -0.4837(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7175.16                     -0.4836(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7177.68                     -0.4828(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7179.84                     -0.4822(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7179.84                     -0.4757(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7183.08                     -0.4736(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7183.44                     -0.4724(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7186.32                     -0.4724(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7195.32                     -0.4719(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7195.32                     -0.4719(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7210.08                     -0.4697(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7209.72                     -0.4679(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7209.36                     -0.4659(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7210.80                     -0.4647(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7216.20                     -0.4634(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7221.24                     -0.4593(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7216.92                     -0.4593(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7216.92                     -0.4590(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7220.88                     -0.4590(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7216.56                     -0.4590(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7218.36                     -0.4576(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7218.00                     -0.4576(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7220.52                     -0.4551(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7220.52                     -0.4543(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7220.52                     -0.4528(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7226.28                     -0.4481(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7229.88                     -0.4464(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7233.84                     -0.4462(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7233.84                     -0.4440(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7237.44                     -0.4424(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7239.96                     -0.4423(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7243.92                     -0.4423(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7243.56                     -0.4420(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7245.36                     -0.4418(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7245.36                     -0.4415(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7245.36                     -0.4411(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7247.88                     -0.4411(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7250.04                     -0.4407(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7252.20                     -0.4406(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7257.96                     -0.4399(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7260.12                     -0.4396(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7262.28                     -0.4392(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7263.36                     -0.4387(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7265.52                     -0.4366(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7266.96                     -0.4363(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7269.12                     -0.4358(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7271.28                     -0.4358(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7275.96                     -0.4356(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7278.48                     -0.4351(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7281.00                     -0.4340(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7283.16                     -0.4329(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7285.32                     -0.4322(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m28s          7285.32                     -0.4321(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7287.48                     -0.4320(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7287.48                     -0.4316(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7289.64                     -0.4315(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7291.80                     -0.4310(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7293.96                     -0.4306(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7309.08                     -0.4302(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7311.24                     -0.4290(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7312.32                     -0.4282(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7315.56                     -0.4281(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7318.08                     -0.4275(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7320.60                     -0.4272(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7325.28                     -0.4269(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7330.68                     -0.4256(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7332.84                     -0.4253(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7345.80                     -0.4247(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7347.60                     -0.4243(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7347.60                     -0.4240(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7347.60                     -0.4233(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7349.76                     -0.4231(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7351.92                     -0.4230(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7351.92                     -0.4227(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7354.08                     -0.4222(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7356.24                     -0.4221(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7358.76                     -0.4217(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7363.80                     -0.4210(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7365.96                     -0.4199(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7368.48                     -0.4196(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7370.64                     -0.4181(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7376.40                     -0.4179(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7378.92                     -0.4177(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7382.88                     -0.4170(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7385.40                     -0.4169(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7387.92                     -0.4166(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7405.56                     -0.4164(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7408.08                     -0.4164(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7408.08                     -0.4158(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7413.84                     -0.4154(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7416.00                     -0.4148(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7418.52                     -0.4144(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7420.68                     -0.4142(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m28s          7423.20                     -0.4135(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7423.20                     -0.4132(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7425.36                     -0.4132(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7427.52                     -0.4131(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7431.84                     -0.4129(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7431.84                     -0.4119(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7426.80                     -0.4117(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7429.32                     -0.4116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7428.24                     -0.4113(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7438.32                     -0.4112(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7440.84                     -0.4109(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7440.84                     -0.4108(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7443.36                     -0.4108(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7445.52                     -0.4104(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7447.68                     -0.4096(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7447.68                     -0.4096(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7447.68                     -0.4095(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7449.84                     -0.4093(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7449.84                     -0.4093(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7452.36                     -0.4090(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7452.36                     -0.4065(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7454.16                     -0.4062(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7456.32                     -0.4062(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7460.64                     -0.4059(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7460.64                     -0.4057(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7467.48                     -0.4053(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7467.48                     -0.4051(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7467.48                     -0.4047(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7469.64                     -0.4045(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7471.80                     -0.4044(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7473.24                     -0.4036(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7475.76                     -0.4032(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7474.32                     -0.4031(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7476.84                     -0.4030(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7479.00                     -0.4029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7485.12                     -0.4021(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7485.12                     -0.4015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7485.12                     -0.4011(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7485.12                     -0.4008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7485.12                     -0.4001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7480.44                     -0.4000(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7482.60                     -0.3992(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7484.40                     -0.3990(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7486.56                     -0.3990(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7489.08                     -0.3990(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7489.80                     -0.3987(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7489.80                     -0.3982(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7491.96                     -0.3980(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7494.12                     -0.3979(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7494.12                     -0.3976(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7494.48                     -0.3971(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7494.48                     -0.3970(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7494.48                     -0.3968(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7494.48                     -0.3964(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7497.00                     -0.3963(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7494.48                     -0.3960(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7495.56                     -0.3959(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7495.56                     -0.3959(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7502.40                     -0.3958(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7509.60                     -0.3956(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7509.60                     -0.3939(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7511.76                     -0.3937(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7512.12                     -0.3935(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7512.84                     -0.3934(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7517.52                     -0.3933(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7519.68                     -0.3931(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7520.40                     -0.3925(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7522.56                     -0.3924(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7522.56                     -0.3918(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7523.28                     -0.3918(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7525.44                     -0.3916(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7525.44                     -0.3914(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7525.44                     -0.3912(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7528.68                     -0.3911(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7530.84                     -0.3898(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7533.00                     -0.3898(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7536.24                     -0.3894(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7536.24                     -0.3889(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7538.40                     -0.3889(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7540.92                     -0.3885(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7545.96                     -0.3884(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7546.32                     -0.3884(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7548.48                     -0.3877(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7548.48                     -0.3877(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7550.64                     -0.3875(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7553.52                     -0.3873(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7555.68                     -0.3873(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7555.68                     -0.3872(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7555.68                     -0.3872(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7555.68                     -0.3866(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7556.76                     -0.3866(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7556.76                     -0.3866(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7556.76                     -0.3855(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7558.92                     -0.3851(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7561.08                     -0.3843(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7561.08                     -0.3843(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7560.00                     -0.3838(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7560.00                     -0.3836(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7563.96                     -0.3835(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7572.24                     -0.3833(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7569.36                     -0.3831(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7567.20                     -0.3831(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7568.28                     -0.3829(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7572.24                     -0.3828(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7574.40                     -0.3828(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7574.40                     -0.3826(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7574.40                     -0.3824(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7572.24                     -0.3822(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7572.24                     -0.3820(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7572.24                     -0.3819(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7572.24                     -0.3819(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7572.24                     -0.3819(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7572.24                     -0.3818(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7573.32                     -0.3813(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7576.56                     -0.3812(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7576.92                     -0.3808(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7577.28                     -0.3807(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7577.28                     -0.3806(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7577.28                     -0.3799(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7579.44                     -0.3799(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7581.24                     -0.3799(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7581.24                     -0.3799(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7581.24                     -0.3799(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7581.60                     -0.3799(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7581.96                     -0.3799(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7581.60                     -0.3799(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7581.60                     -0.3799(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7527.96                     -0.3799(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7476.84                     -0.3799(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7459.92                     -0.3793(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7447.32                     -0.3773(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7443.36                     -0.3753(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7429.32                     -0.3754(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7416.36                     -0.3743(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7405.92                     -0.3746(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7389.72                     -0.3736(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7374.60                     -0.3735(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7368.84                     -0.3735(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7374.24                     -0.3735(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7368.12                     -0.3733(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7366.68                     -0.3733(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7363.08                     -0.3723(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7363.44                     -0.3723(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7363.44                     -0.3723(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7358.04                     -0.3723(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7362.00                     -0.3714(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7349.76                     -0.3714(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7346.52                     -0.3714(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7346.16                     -0.3714(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7338.60                     -0.3708(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7321.68                     -0.3708(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7303.68                     -0.3708(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7293.60                     -0.3709(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7286.40                     -0.3709(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7280.64                     -0.3699(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7277.04                     -0.3697(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7278.12                     -0.3697(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7280.64                     -0.3697(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7283.16                     -0.3697(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7284.96                     -0.3697(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7286.76                     -0.3695(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7284.60                     -0.3695(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7284.24                     -0.3695(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7282.80                     -0.3700(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7279.20                     -0.3695(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7273.08                     -0.3687(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7272.72                     -0.3688(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7273.08                     -0.3688(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7270.56                     -0.3688(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7272.00                     -0.3688(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m29s          7272.36                     -0.3684(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7270.92                     -0.3683(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7270.56                     -0.3683(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7272.72                     -0.3683(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7272.72                     -0.3683(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7273.44                     -0.3678(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7273.80                     -0.3676(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7273.44                     -0.3676(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7276.32                     -0.3675(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7275.96                     -0.3675(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7270.20                     -0.3675(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7270.92                     -0.3673(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7273.08                     -0.3665(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7274.52                     -0.3665(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7270.20                     -0.3665(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7273.80                     -0.3665(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7274.16                     -0.3665(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7274.52                     -0.3665(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7273.80                     -0.3664(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7272.36                     -0.3664(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7271.28                     -0.3649(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7272.36                     -0.3649(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7274.16                     -0.3639(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7274.16                     -0.3639(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7276.32                     -0.3639(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7275.96                     -0.3622(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7277.40                     -0.3618(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7279.20                     -0.3618(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7278.12                     -0.3618(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7278.12                     -0.3618(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7277.76                     -0.3609(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7277.76                     -0.3608(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7279.20                     -0.3608(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7279.20                     -0.3608(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7277.40                     -0.3601(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m29s          7277.76                     -0.3596(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7277.76                     -0.3592(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7278.12                     -0.3592(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7279.20                     -0.3589(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7281.36                     -0.3583(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7283.52                     -0.3553(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7288.20                     -0.3538(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7289.28                     -0.3521(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7290.36                     -0.3519(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7290.36                     -0.3519(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7290.36                     -0.3516(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7290.36                     -0.3514(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7294.32                     -0.3509(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7304.04                     -0.3507(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7305.84                     -0.3505(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7305.84                     -0.3504(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7305.84                     -0.3503(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7309.80                     -0.3494(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7309.80                     -0.3488(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7311.96                     -0.3478(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7311.96                     -0.3471(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7312.32                     -0.3468(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7317.72                     -0.3467(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7319.88                     -0.3465(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7336.80                     -0.3463(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7336.80                     -0.3463(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7338.96                     -0.3462(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7338.96                     -0.3460(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7340.04                     -0.3459(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7340.04                     -0.3448(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7337.88                     -0.3441(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7337.52                     -0.3440(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7341.12                     -0.3439(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7341.12                     -0.3438(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7338.96                     -0.3438(2)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7339.32                     -0.3438(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7339.32                     -0.3438(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7339.32                     -0.3438(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7336.80                     -0.3438(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7335.00                     -0.3438(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7335.36                     -0.3438(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7335.36                     -0.3438(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7335.72                     -0.3438(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7335.72                     -0.3438(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7335.72                     -0.3438(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7305.84                     -0.3429(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7305.84                     -0.3425(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7313.40                     -0.3417(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7318.08                     -0.3404(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m30s          7323.84                     -0.3402(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7332.12                     -0.3396(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m30s          7338.96                     -0.3387(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7354.44                     -0.3383(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m31s          7358.76                     -0.3381(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7359.12                     -0.3380(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7359.48                     -0.3380(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7355.88                     -0.3379(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7352.64                     -0.3379(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7351.20                     -0.3369(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7350.12                     -0.3355(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7348.68                     -0.3352(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7349.76                     -0.3352(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7348.68                     -0.3352(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7349.04                     -0.3352(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7348.32                     -0.3352(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7348.32                     -0.3347(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7345.80                     -0.3347(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7346.16                     -0.3347(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7347.24                     -0.3342(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7345.44                     -0.3336(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7345.08                     -0.3336(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7349.76                     -0.3336(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7336.44                     -0.3336(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7335.00                     -0.3336(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7335.36                     -0.3336(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7335.36                     -0.3336(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7339.68                     -0.3314(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7340.04                     -0.3295(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7337.88                     -0.3295(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7341.84                     -0.3294(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m31s          7340.04                     -0.3291(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7340.76                     -0.3291(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7342.56                     -0.3291(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7342.56                     -0.3291(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7342.20                     -0.3289(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7341.84                     -0.3289(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7338.24                     -0.3285(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7336.08                     -0.3283(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7335.00                     -0.3283(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7332.84                     -0.3283(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7332.84                     -0.3282(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7332.48                     -0.3282(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7334.64                     -0.3281(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m31s          7337.16                     -0.3279(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7338.96                     -0.3279(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7338.96                     -0.3277(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7338.96                     -0.3277(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7338.96                     -0.3274(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m31s          7344.00                     -0.3273(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7344.00                     -0.3270(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7345.80                     -0.3270(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7348.32                     -0.3269(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7348.32                     -0.3268(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7348.32                     -0.3267(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7351.56                     -0.3265(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7351.56                     -0.3261(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7353.36                     -0.3260(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7353.36                     -0.3259(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7353.36                     -0.3259(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7353.72                     -0.3257(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7355.16                     -0.3255(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7357.32                     -0.3255(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7357.32                     -0.3254(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7359.48                     -0.3252(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7359.48                     -0.3252(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7361.64                     -0.3250(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7362.36                     -0.3240(1)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7364.52                     -0.3240(1)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7364.52                     -0.3240(2)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m31s          7364.52                     -0.3239(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m31s          7367.04                     -0.3239(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m31s          7364.88                     -0.3239(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m31s          7367.04                     -0.3239(4)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7367.04                     -0.3239(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7365.96                     -0.3239(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7365.24                     -0.3239(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7364.88                     -0.3239(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7363.08                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7361.64                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7360.56                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7359.48                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7359.48                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7359.84                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7363.44                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7358.40                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7353.36                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7345.80                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7345.44                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7341.12                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7339.32                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7337.16                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7336.44                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7335.72                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7334.28                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7332.48                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7332.12                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7331.76                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7331.04                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7328.88                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7328.16                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7327.80                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7326.72                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7324.20                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7321.32                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7319.16                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7315.56                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7313.40                     -0.3238(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7311.24                     -0.3236(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7311.24                     -0.3236(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7310.16                     -0.3234(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m34s          7310.16                     -0.3234(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m34s          7310.16                     -0.3234(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m34s          7309.44                     -0.3226(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m34s          7313.76                     -0.3226(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m34s          7314.48                     -0.3226(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7316.64                     -0.3226(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7315.92                     -0.3226(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7314.84                     -0.3225(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7314.12                     -0.3225(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7310.16                     -0.3216(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7312.68                     -0.3215(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7310.16                     -0.3215(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m34s          7309.80                     -0.3215(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7309.44                     -0.3215(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7306.56                     -0.3215(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7308.36                     -0.3215(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7308.00                     -0.3213(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m35s          7305.48                     -0.3212(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m35s          7306.92                     -0.3213(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7305.84                     -0.3213(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7305.12                     -0.3213(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7303.32                     -0.3213(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7303.32                     -0.3211(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7301.52                     -0.3209(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7301.88                     -0.3209(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7299.72                     -0.3209(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7298.64                     -0.3207(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7298.28                     -0.3207(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m35s          7297.92                     -0.3206(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m35s          7299.72                     -0.3207(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m35s          7300.08                     -0.3206(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m35s          7300.08                     -0.3204(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7301.52                     -0.3204(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7301.88                     -0.3202(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7304.04                     -0.3201(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7307.64                     -0.3201(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7307.64                     -0.3195(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7309.80                     -0.3190(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m35s          7309.80                     -0.3185(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7309.80                     -0.3178(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7314.12                     -0.3178(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7315.56                     -0.3174(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7315.92                     -0.3171(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7315.92                     -0.3170(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7315.92                     -0.3168(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7316.28                     -0.3167(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7316.28                     -0.3166(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7328.16                     -0.3160(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7328.16                     -0.3157(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7330.68                     -0.3155(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7330.68                     -0.3153(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7330.68                     -0.3152(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7330.68                     -0.3152(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7332.84                     -0.3151(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7330.68                     -0.3148(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7339.32                     -0.3148(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7341.48                     -0.3148(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m35s          7343.64                     -0.3147(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7325.64                     -0.3147(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7325.64                     -0.3147(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7338.96                     -0.3192(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7338.96                     -0.3192(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7336.80                     -0.3192(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7337.16                     -0.3183(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7336.44                     -0.3183(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7335.36                     -0.3177(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7336.80                     -0.3159(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7336.08                     -0.3159(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7336.80                     -0.3155(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7337.88                     -0.3153(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7339.68                     -0.3153(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7339.32                     -0.3153(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7340.76                     -0.3153(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7340.76                     -0.3153(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7344.00                     -0.3157(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7342.56                     -0.3157(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7341.12                     -0.3155(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m38s          7342.20                     -0.3155(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m38s          7344.36                     -0.3153(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7345.44                     -0.3153(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7346.88                     -0.3146(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7343.28                     -0.3146(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7341.12                     -0.3146(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7341.12                     -0.3144(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7341.12                     -0.3144(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7342.20                     -0.3144(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7344.36                     -0.3148(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7344.00                     -0.3148(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7343.28                     -0.3148(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7343.28                     -0.3147(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7344.72                     -0.3147(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7344.72                     -0.3147(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7353.00                     -0.3147(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7355.16                     -0.3145(1)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7344.72                     -0.3145(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7352.64                     -0.3145(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7351.92                     -0.3145(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7347.96                     -0.3138(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7350.12                     -0.3138(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7355.16                     -0.3135(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7351.56                     -0.3135(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m38s          7347.24                     -0.3133(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7349.40                     -0.3125(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7347.60                     -0.3125(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7346.88                     -0.3125(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7345.44                     -0.3125(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7342.56                     -0.3124(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7341.84                     -0.3124(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7341.48                     -0.3124(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7343.64                     -0.3124(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7347.24                     -0.3123(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7347.60                     -0.3123(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7347.24                     -0.3123(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7348.32                     -0.3123(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7347.60                     -0.3124(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m39s          7344.72                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7345.44                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7345.80                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7347.96                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7349.40                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7349.40                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7349.76                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7349.40                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7350.12                     -0.3121(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7349.76                     -0.3121(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7348.68                     -0.3121(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7345.44                     -0.3121(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7342.92                     -0.3121(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7341.48                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7343.64                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7343.64                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7341.48                     -0.3120(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7339.68                     -0.3119(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7339.68                     -0.3119(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7336.80                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7335.00                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7335.72                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7335.72                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7334.28                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7334.64                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.92                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7332.84                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.92                     -0.3116(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.56                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7334.64                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7332.48                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7335.36                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7332.12                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7332.84                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.56                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.20                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.92                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7334.28                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7335.00                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.56                     -0.3115(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7332.12                     -0.3112(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7330.68                     -0.3112(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7331.76                     -0.3112(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.20                     -0.3110(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.56                     -0.3109(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7333.56                     -0.3106(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7334.64                     -0.3105(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7336.80                     -0.3103(2)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7336.80                     -0.3103(2)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7338.96                     -0.3103(2)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m39s          7340.76                     -0.3100(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7339.32                     -0.3100(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7340.04                     -0.3098(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7334.64                     -0.3096(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7335.36                     -0.3093(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7335.36                     -0.3092(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7335.00                     -0.3092(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7337.52                     -0.3092(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7337.52                     -0.3092(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7339.68                     -0.3091(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7335.72                     -0.3088(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7334.64                     -0.3088(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7333.56                     -0.3088(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7334.28                     -0.3088(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7334.64                     -0.3083(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7333.56                     -0.3083(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7331.76                     -0.3080(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7330.68                     -0.3080(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7332.48                     -0.3080(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7333.56                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7333.56                     -0.3075(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7335.72                     -0.3075(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7334.28                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7329.60                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7329.96                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7329.60                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7331.40                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7329.24                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7327.80                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7328.52                     -0.3076(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7328.52                     -0.3074(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7328.88                     -0.3070(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7328.88                     -0.3070(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7330.32                     -0.3070(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7337.52                     -0.3070(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7338.96                     -0.3070(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7344.00                     -0.3067(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7344.00                     -0.3062(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7346.16                     -0.3062(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7356.24                     -0.3061(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7356.24                     -0.3057(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m42s          7356.60                     -0.3056(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7356.60                     -0.3056(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7354.44                     -0.3053(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7356.60                     -0.3052(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7356.60                     -0.3051(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7365.96                     -0.3047(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7365.96                     -0.3045(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7368.12                     -0.3043(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7368.12                     -0.3041(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7368.48                     -0.3040(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7368.12                     -0.3039(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7368.48                     -0.3039(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7368.48                     -0.3039(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7369.56                     -0.3037(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m42s          7371.00                     -0.3037(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7371.00                     -0.3036(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7371.36                     -0.3036(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m42s          7372.08                     -0.3036(3)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m43s          7353.36                     -0.3035(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m43s          7352.28                     -0.3034(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7352.28                     -0.3032(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7352.64                     -0.3032(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7354.80                     -0.3032(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7354.44                     -0.3032(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7353.36                     -0.3030(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7354.44                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7354.80                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7351.92                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7351.56                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7351.20                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7351.56                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7347.96                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7349.04                     -0.3028(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7350.48                     -0.3028(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7350.48                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7350.48                     -0.3028(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7351.56                     -0.3028(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7352.64                     -0.3028(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m45s          7352.64                     -0.3028(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7351.92                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7353.36                     -0.3029(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7352.64                     -0.3020(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m46s          7352.28                     -0.3017(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7354.44                     -0.3017(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7354.44                     -0.3016(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m46s          7354.44                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7356.60                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7355.16                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7358.76                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m46s          7360.92                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7356.96                     -0.3014(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7356.96                     -0.3014(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7377.12                     -0.3053(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7385.04                     -0.3053(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7385.04                     -0.3053(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7381.08                     -0.3030(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7380.36                     -0.3030(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7378.20                     -0.3030(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7379.28                     -0.3030(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7379.64                     -0.3020(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7380.00                     -0.3020(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7381.80                     -0.3019(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7384.32                     -0.3019(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7385.40                     -0.3019(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7389.36                     -0.3020(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7387.56                     -0.3018(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7386.12                     -0.3018(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7385.76                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7387.20                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7390.80                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7388.28                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7386.12                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7384.32                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7380.36                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7380.72                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7381.44                     -0.3015(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7380.00                     -0.3012(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7378.92                     -0.3012(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7378.56                     -0.3012(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7376.76                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7376.76                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7378.92                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m48s          7378.92                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m49s          7376.76                     -0.3005(2)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m49s          7378.92                     -0.3005(2)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7378.92                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7377.84                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7376.04                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7374.96                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7374.24                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7373.16                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7371.72                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7370.28                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7369.56                     -0.3003(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7368.12                     -0.3003(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7368.12                     -0.3003(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7367.40                     -0.3003(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7366.68                     -0.3002(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7365.96                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7362.36                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7360.92                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7358.40                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7356.24                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7355.16                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7353.36                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7349.04                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7347.24                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7347.96                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7345.44                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7345.08                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7344.36                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7343.28                     -0.3001(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7337.52                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7333.20                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7327.80                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7321.32                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7316.64                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7314.48                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7313.76                     -0.3005(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7311.96                     -0.3006(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7306.92                     -0.3007(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7306.56                     -0.3007(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7304.40                     -0.3007(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7303.32                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7298.64                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7298.28                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7296.12                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7293.96                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7293.24                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7292.52                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7292.52                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7292.16                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7291.80                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7291.44                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7290.00                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7290.00                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7268.40                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7267.68                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7266.24                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7265.16                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7272.36                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7279.56                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7286.76                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7286.76                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7255.44                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7255.44                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7192.80                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7182.00                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7167.60                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7157.16                     -0.3007(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7145.64                     -0.3007(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7129.08                     -0.3007(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7123.68                     -0.3007(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7117.20                     -0.3008(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7103.52                     -0.3016(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7102.08                     -0.3016(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7088.40                     -0.3012(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7082.64                     -0.3012(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7076.88                     -0.3012(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7065.36                     -0.3012(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7056.72                     -0.3011(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7047.36                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7036.56                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7025.40                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7018.92                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7010.64                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          7001.64                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6995.52                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6994.80                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6993.72                     -0.3010(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6993.00                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6991.56                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6989.40                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6987.60                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6984.36                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6982.20                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6981.48                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6976.80                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6975.72                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6975.36                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6975.36                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6973.56                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6972.84                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6948.72                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6948.00                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6947.28                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6942.96                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6942.24                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6941.52                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6940.80                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6939.72                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6938.28                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6937.92                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6937.56                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6944.76                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6951.96                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6959.16                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6960.60                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6959.16                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6958.08                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6958.08                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6924.60                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6924.60                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6924.60                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6923.52                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6923.52                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6922.08                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6922.08                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6921.36                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6917.76                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6917.04                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6915.24                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6914.52                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6914.16                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6913.44                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6911.28                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6909.12                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6908.04                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6905.88                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6904.80                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6904.80                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m52s          6904.08                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6904.08                     -0.3009(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6905.52                     -0.3009(0)  (tns: -15.606394)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6906.24                     -0.3009(0)  (tns: -15.606386)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6908.40                     -0.3008(0)  (tns: -15.604861)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m53s          6908.40                     -0.3007(0)  (tns: -15.604321)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6910.56                     -0.3006(0)  (tns: -15.603604)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6913.08                     -0.3006(0)  (tns: -15.603694)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6913.08                     -0.3002(0)  (tns: -15.602212)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6911.64                     -0.3001(0)  (tns: -15.600987)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6913.80                     -0.3001(0)  (tns: -15.600913)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6914.16                     -0.3001(0)  (tns: -15.599999)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6918.12                     -0.3001(0)  (tns: -15.599716)
+              u_compute_engine/temp_product_reg[31]/D  
+ 00h00m53s          6920.28                     -0.2998(0)  (tns: -15.492126)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6920.28                     -0.2998(0)  (tns: -15.492100)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m53s          6920.64                     -0.2996(0)  (tns: -15.490918)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6921.00                     -0.2996(0)  (tns: -15.488840)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D  
+ 00h00m53s          6922.08                     -0.2995(0)  (tns: -15.489634)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6924.24                     -0.2995(0)  (tns: -15.489037)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6926.76                     -0.2995(0)  (tns: -15.488810)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D  
+ 00h00m53s          6926.76                     -0.2994(0)  (tns: -15.487950)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6926.76                     -0.2994(0)  (tns: -15.487904)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6926.76                     -0.2993(1)  (tns: -15.487097)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6927.12                     -0.2993(1)  (tns: -15.486635)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6928.20                     -0.2993(3)  (tns: -15.486869)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6930.36                     -0.2993(4)  (tns: -15.443280)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6932.52                     -0.2993(4)  (tns: -15.409366)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6934.68                     -0.2993(5)  (tns: -15.347926)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6934.68                     -0.2993(3)  (tns: -15.126280)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6936.84                     -0.2993(8)  (tns: -15.126240)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6939.00                     -0.2993(9)  (tns: -15.080830)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6941.16                     -0.2993(10)  (tns:
+-14.991672)                u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6941.16                     -0.2993(11)  (tns:
+-14.990520)                u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6941.16                     -0.2993(12)  (tns:
+-14.981748)                u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6943.32                     -0.2993(13)  (tns:
+-14.949037)                u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6944.40                     -0.2993(14)  (tns:
+-14.945460)                u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6953.76                     -0.2993(15)  (tns:
+-14.904174)                u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6954.12                     -0.2993(15)  (tns: -5.944627)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6956.28                     -0.2993(16)  (tns: -5.944465)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6956.28                     -0.2993(17)  (tns: -5.876475)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6958.80                     -0.2993(18)  (tns: -5.867000)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6958.80                     -0.2993(18)  (tns: -5.721052)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6960.60                     -0.2993(20)  (tns: -5.720322)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6962.76                     -0.2993(21)  (tns: -5.657028)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6962.76                     -0.2993(21)  (tns: -4.382881)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6964.92                     -0.2993(22)  (tns: -4.336035)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6964.92                     -0.2993(22)  (tns: -4.196116)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6967.08                     -0.2993(25)  (tns: -4.185427)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6969.24                     -0.2993(26)  (tns: -4.142396)
+              u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6969.24                     -0.2993(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+ 00h00m53s          6969.24                     -0.2993(0)               
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D  
+
+Optimization Completed
+======================
+
+0
+CMD:     analyze_qor -summary -precision 6 > $rpt_dir/qor.rpt
+0
+CMD:     analyze_area > $rpt_dir/area.rpt
+0
+CMD:     analyze_resources > $rpt_dir/resource.rpt
+0
+CMD:     analyze_constraint -verbose -all_violators > $rpt_dir/cstr.rpt
+0
+CMD:     analyze_design > $rpt_dir/design.rpt
+0
+CMD:     analyze_power > $rpt_dir/power.rpt
+0
+CMD:     analyze_timing -delay_type max -input_pins -precision 6 >
+         $rpt_dir/timing.rpt
+0
+CMD:     write_design -format verilog -hierarchy -o $rpt_dir/mapped.v
+0
+CMD:     write_sdc > $rpt_dir/mac16.sdc
+0
+CMD:     run_stat > $rpt_dir/stat.log
+0
+CMD:     mem_usage > $rpt_dir/memusage.rpt
+0
+0
+
+
+Warning/Error message (message ID)                                     Number
+-----------------------------------------------------------------------------
+WARNING:                                            (GET_WARN_012)          7
+Cannot find object matching search pattern ''!
+
+ERROR:                                               (CMD_ERR_003)          4
+ at line  of file  while executing: 
+
+ERROR:                                                 (LIB_E_001)          7
+Failed to locate library file "" under the search paths.
+
+WARNING:                                               (STA_W_323)          4
+Argument '' is ignored!
+
+ERROR:                                                 (STA_E_247)          4
+Cannot find pin/port: ''!
+-----------------------------------------------------------------------------
+Errors: 15, Warnings: 11
+
+CPU time: 54.29 sec
+Quit as_shell.  Thank you!

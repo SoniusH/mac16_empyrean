@@ -1,0 +1,1605 @@
+
+
+*******************************************************************************
+* Report  : Maximal/setup time constraint                                     *
+* Command : analyze_constraint -verbose -all_violators >                      *
+*         : /headless/Desktop/data/syn_try/report/cstr.rpt                    *
+* Design  : mac16                                                             *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 2:34 PM, 13-Apr-26                                                *
+*******************************************************************************
+
+
+Beginpoint: u_compute_engine/cnt_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/u_mul8x8/pp_stage1_reg[14] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/cnt_reg[1]/CK (DFFRQX4H9R)          0.00         0.00 R
+u_compute_engine/cnt_reg[1]/Q (DFFRQX4H9R)           0.10         0.10 F
+u911/Y (XOR2X3H9R)                                   0.03         0.13 F
+u3882/Y (BUFX9H9R)                                   0.03         0.16 F
+u5655/Y (NAND2XBX3H9R)                               0.02         0.18 R
+u5656/Y (NAND2X4H9R)                                 0.02         0.19 F
+u924/Y (AND4X4H9R)                                   0.05         0.24 F
+u8846/Y (BUFX1P7H9R)                                 0.03         0.27 F
+u3954/Z (OAO211X4H9R)                                0.08         0.34 F
+u964/Y (AOI31X3H9R)                                  0.03         0.38 R
+u1028/Y (OAI31X3H9R)                                 0.03         0.41 F
+u1029/Y (AOI32X4H9R)                                 0.05         0.45 R
+u1040/CO (CGENX1H9R)                                 0.04         0.50 R
+u1146/Y (OA211X0P5H9R)                               0.04         0.53 R
+u1149/Y (OR4X1P4H9R)                                 0.04         0.57 R
+u1150/Y (XOR3X1P4H9R)                                0.05         0.62 F
+u1154/Y (AOI211X4H9R)                                0.04         0.66 R
+u1185/Y (XNOR3X1P4H9R)                               0.07         0.73 F
+u1209/Y (XOR2X2H9R)                                  0.03         0.77 F
+u1221/ZN (OAI2BB1X4H9R)                              0.05         0.81 F
+u1222/Y (OAI22X4H9R)                                 0.03         0.84 R
+u1225/CON (CGENCONAX2H9R)                            0.03         0.87 F
+u3743/Z (AO31X4H9R)                                  0.06         0.93 F
+u1227/Y (AND4X4H9R)                                  0.03         0.97 F
+u2636/Y (INVX4H9R)                                   0.01         0.98 R
+u1240/Y (AOI211X4H9R)                                0.02         1.00 F
+u1277/Z (OAO211X4H9R)                                0.08         1.09 F
+u1280/Y (AOI211X3H9R)                                0.04         1.13 R
+u1281/Y (AOI211X2H9R)                                0.03         1.16 F
+u1289/Y (OAI21X2H9R)                                 0.03         1.19 R
+u2402/Y (XNOR2X0P7H9R)                               0.02         1.22 R
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/D (DFFRQX2H9R)
+                                                     0.00         1.22 R
+data arrival time                                                 1.22
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/u_mul8x8/pp_stage1_reg[14]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.22
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.30
+
+
+
+Beginpoint: u_compute_engine/cnt_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/u_mul8x8/pp_stage1_reg[13] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/cnt_reg[1]/CK (DFFRQX4H9R)          0.00         0.00 R
+u_compute_engine/cnt_reg[1]/Q (DFFRQX4H9R)           0.10         0.10 F
+u911/Y (XOR2X3H9R)                                   0.03         0.13 F
+u3882/Y (BUFX9H9R)                                   0.03         0.16 F
+u5655/Y (NAND2XBX3H9R)                               0.02         0.18 R
+u5656/Y (NAND2X4H9R)                                 0.02         0.19 F
+u924/Y (AND4X4H9R)                                   0.05         0.24 F
+u3870/Z (OA221X4H9R)                                 0.05         0.29 F
+u1025/Y (AOI221X4H9R)                                0.04         0.34 R
+u3580/Y (BUFX5H9R)                                   0.03         0.36 R
+u1043/Y (NOR3X3H9R)                                  0.02         0.39 F
+u16602/Z (AO211X4H9R)                                0.07         0.46 F
+u1056/Y (NAND2X4H9R)                                 0.03         0.49 R
+u1057/Y (XOR3X3H9R)                                  0.07         0.56 F
+u5571/Y (INVX3H9R)                                   0.02         0.58 R
+u1141/Y (AOI22X3H9R)                                 0.02         0.60 F
+u1142/Y (NAND2X3H9R)                                 0.02         0.63 R
+u1154/Y (AOI211X4H9R)                                0.03         0.66 F
+u1171/CO (CGENX1P4H9R)                               0.06         0.71 F
+u1175/Z (AO221X4H9R)                                 0.08         0.79 F
+u1176/Y (NAND3BX4H9R)                                0.03         0.82 R
+u3310/Y (INVX0P5H9R)                                 0.02         0.84 F
+u3311/Y (INVX1H9R)                                   0.01         0.85 R
+u1232/Y (NAND2BX2H9R)                                0.03         0.89 R
+u1233/Y (NAND2BX3H9R)                                0.02         0.91 F
+u1235/Y (AOI32X3H9R)                                 0.04         0.95 R
+u4163/Y (OAI31X4H9R)                                 0.03         0.98 F
+u1245/Y (XOR2X1H9R)                                  0.03         1.01 F
+u8926/Y (BUFX1H9R)                                   0.03         1.04 F
+u1276/Y (OAI211X2H9R)                                0.03         1.07 R
+u1278/Y (OAI211X2H9R)                                0.04         1.11 F
+u1281/Y (AOI211X2H9R)                                0.04         1.15 R
+u1294/Y (NAND2BX2H9R)                                0.04         1.19 R
+u2403/Y (XNOR2X1H9R)                                 0.02         1.21 R
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/D (DFFRQX2H9R)
+                                                     0.00         1.21 R
+data arrival time                                                 1.21
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/u_mul8x8/pp_stage1_reg[13]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.21
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.30
+
+
+
+Beginpoint: u_compute_engine/cnt_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/u_mul8x8/pp_stage1_reg[15] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/cnt_reg[1]/CK (DFFRQX4H9R)          0.00         0.00 R
+u_compute_engine/cnt_reg[1]/Q (DFFRQX4H9R)           0.10         0.10 F
+u911/Y (XOR2X3H9R)                                   0.03         0.13 F
+u3882/Y (BUFX9H9R)                                   0.03         0.16 F
+u5655/Y (NAND2XBX3H9R)                               0.02         0.18 R
+u5656/Y (NAND2X4H9R)                                 0.02         0.19 F
+u924/Y (AND4X4H9R)                                   0.05         0.24 F
+u8846/Y (BUFX1P7H9R)                                 0.03         0.27 F
+u3954/Z (OAO211X4H9R)                                0.08         0.34 F
+u964/Y (AOI31X3H9R)                                  0.03         0.38 R
+u1028/Y (OAI31X3H9R)                                 0.03         0.41 F
+u1029/Y (AOI32X4H9R)                                 0.05         0.45 R
+u1040/CO (CGENX1H9R)                                 0.04         0.50 R
+u1146/Y (OA211X0P5H9R)                               0.04         0.53 R
+u1149/Y (OR4X1P4H9R)                                 0.04         0.57 R
+u1150/Y (XOR3X1P4H9R)                                0.05         0.62 F
+u1154/Y (AOI211X4H9R)                                0.04         0.66 R
+u1185/Y (XNOR3X1P4H9R)                               0.07         0.73 F
+u1209/Y (XOR2X2H9R)                                  0.03         0.77 F
+u1221/ZN (OAI2BB1X4H9R)                              0.05         0.81 F
+u1222/Y (OAI22X4H9R)                                 0.03         0.84 R
+u1225/CON (CGENCONAX2H9R)                            0.03         0.87 F
+u3743/Z (AO31X4H9R)                                  0.06         0.93 F
+u1227/Y (AND4X4H9R)                                  0.03         0.97 F
+u3043/Y (BUFX1P7H9R)                                 0.03         0.99 F
+u4082/Y (OAI211X1H9R)                                0.03         1.02 R
+u1277/Z (OAO211X4H9R)                                0.05         1.08 R
+u1280/Y (AOI211X3H9R)                                0.03         1.11 F
+u1288/Y (OAI211X2H9R)                                0.04         1.16 R
+u1289/Y (OAI21X2H9R)                                 0.03         1.18 F
+u1290/Y (AOI211X0P7H9R)                              0.03         1.21 R
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/D (DFFRQX2H9R)
+                                                     0.00         1.21 R
+data arrival time                                                 1.21
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/u_mul8x8/pp_stage1_reg[15]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.21
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.30
+
+
+
+Beginpoint: u_compute_engine/cnt_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/u_mul8x8/pp_stage1_reg[12] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/cnt_reg[1]/CK (DFFRQX4H9R)          0.00         0.00 R
+u_compute_engine/cnt_reg[1]/Q (DFFRQX4H9R)           0.10         0.10 F
+u911/Y (XOR2X3H9R)                                   0.03         0.13 F
+u3882/Y (BUFX9H9R)                                   0.03         0.16 F
+u5655/Y (NAND2XBX3H9R)                               0.02         0.18 R
+u5656/Y (NAND2X4H9R)                                 0.02         0.19 F
+u924/Y (AND4X4H9R)                                   0.05         0.24 F
+u8846/Y (BUFX1P7H9R)                                 0.03         0.27 F
+u3954/Z (OAO211X4H9R)                                0.08         0.34 F
+u964/Y (AOI31X3H9R)                                  0.03         0.38 R
+u1028/Y (OAI31X3H9R)                                 0.03         0.41 F
+u1029/Y (AOI32X4H9R)                                 0.05         0.45 R
+u1040/CO (CGENX1H9R)                                 0.04         0.50 R
+u1146/Y (OA211X0P5H9R)                               0.04         0.53 R
+u1149/Y (OR4X1P4H9R)                                 0.04         0.57 R
+u1150/Y (XOR3X1P4H9R)                                0.05         0.62 F
+u1154/Y (AOI211X4H9R)                                0.04         0.66 R
+u1185/Y (XNOR3X1P4H9R)                               0.07         0.73 F
+u1209/Y (XOR2X2H9R)                                  0.03         0.77 F
+u1221/ZN (OAI2BB1X4H9R)                              0.05         0.81 F
+u1222/Y (OAI22X4H9R)                                 0.03         0.84 R
+u1225/CON (CGENCONAX2H9R)                            0.03         0.87 F
+u3743/Z (AO31X4H9R)                                  0.06         0.93 F
+u1227/Y (AND4X4H9R)                                  0.03         0.97 F
+u2636/Y (INVX4H9R)                                   0.01         0.98 R
+u1240/Y (AOI211X4H9R)                                0.02         1.00 F
+u1277/Z (OAO211X4H9R)                                0.08         1.09 F
+u1278/Y (OAI211X2H9R)                                0.03         1.12 R
+u1296/Y (NOR2BX0P5H9R)                               0.04         1.16 R
+u2404/Y (XNOR2X0P7H9R)                               0.03         1.19 R
+u_compute_engine/u_mul8x8/pp_stage1_reg[12]/D (DFFRQX2H9R)
+                                                     0.00         1.19 R
+data arrival time                                                 1.19
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/u_mul8x8/pp_stage1_reg[12]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.19
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.28
+
+
+
+Beginpoint: u_compute_engine/cnt_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/u_mul8x8/pp_stage1_reg[11] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/cnt_reg[1]/CK (DFFRQX4H9R)          0.00         0.00 R
+u_compute_engine/cnt_reg[1]/Q (DFFRQX4H9R)           0.10         0.10 F
+u911/Y (XOR2X3H9R)                                   0.03         0.13 F
+u3882/Y (BUFX9H9R)                                   0.03         0.16 F
+u5655/Y (NAND2XBX3H9R)                               0.02         0.18 R
+u5656/Y (NAND2X4H9R)                                 0.02         0.19 F
+u924/Y (AND4X4H9R)                                   0.05         0.24 F
+u8846/Y (BUFX1P7H9R)                                 0.03         0.27 F
+u3954/Z (OAO211X4H9R)                                0.08         0.34 F
+u964/Y (AOI31X3H9R)                                  0.03         0.38 R
+u1028/Y (OAI31X3H9R)                                 0.03         0.41 F
+u1029/Y (AOI32X4H9R)                                 0.05         0.45 R
+u1040/CO (CGENX1H9R)                                 0.04         0.50 R
+u1146/Y (OA211X0P5H9R)                               0.04         0.53 R
+u1149/Y (OR4X1P4H9R)                                 0.04         0.57 R
+u1150/Y (XOR3X1P4H9R)                                0.05         0.62 F
+u1154/Y (AOI211X4H9R)                                0.04         0.66 R
+u1185/Y (XNOR3X1P4H9R)                               0.07         0.73 F
+u1194/CON (CGENCONAX1H9R)                            0.05         0.78 R
+u1223/Y (XOR3X0P7H9R)                                0.07         0.85 F
+u1225/CON (CGENCONAX2H9R)                            0.04         0.88 R
+u1249/Y (XOR3X0P7H9R)                                0.07         0.95 F
+u1265/Y (XNOR2X2H9R)                                 0.05         1.00 F
+u1266/Y (AOI32X2H9R)                                 0.04         1.04 R
+u1269/Y (AOI21X2H9R)                                 0.03         1.07 F
+u3818/Y (INVX0P5H9R)                                 0.02         1.09 R
+u3819/Y (INVX1H9R)                                   0.01         1.10 F
+u1299/Y (NOR2X1H9R)                                  0.02         1.12 R
+u1301/Y (NAND2X1H9R)                                 0.01         1.14 F
+u1302/ZN (AOAI211X2H9R)                              0.01         1.15 R
+u_compute_engine/u_mul8x8/pp_stage1_reg[11]/D (DFFRQX2H9R)
+                                                     0.00         1.15 R
+data arrival time                                                 1.15
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/u_mul8x8/pp_stage1_reg[11]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.15
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.23
+
+
+
+Beginpoint: u_compute_engine/temp_product_reg[8] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[31] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/temp_product_reg[8]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/temp_product_reg[8]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1609/ZN (AOAI211X0P5H9R)                            0.08         0.17 R
+u1612/ZN (AOAI211X2H9R)                              0.05         0.22 F
+u1614/Y (NAND3X1H9R)                                 0.05         0.28 R
+u1617/Y (AOI31X1H9R)                                 0.04         0.31 F
+u1618/CON (CGENCONAX1H9R)                            0.04         0.36 R
+u1619/CO (CGENX1H9R)                                 0.05         0.40 R
+u1620/CON (CGENCONAX1H9R)                            0.03         0.43 F
+u1621/CO (CGENX1H9R)                                 0.05         0.48 F
+u1622/CO (CGENX1H9R)                                 0.05         0.53 F
+u1624/ZN (AOAI211X2H9R)                              0.04         0.57 R
+u1625/Y (INVX1H9R)                                   0.01         0.59 F
+u1630/Z (OAO211X0P5H9R)                              0.09         0.67 F
+u1631/Y (NAND2X1H9R)                                 0.03         0.70 R
+u1634/Y (NAND3BX1H9R)                                0.03         0.73 F
+u1635/Y (NAND2X1H9R)                                 0.03         0.76 R
+u1638/Y (NAND3X1H9R)                                 0.03         0.79 F
+u1639/Y (AOI21BX1H9R)                                0.05         0.84 F
+u1641/Y (OA211X0P7H9R)                               0.06         0.89 F
+u1642/Y (AND2X1H9R)                                  0.04         0.93 F
+u1643/Y (AND2X1H9R)                                  0.04         0.97 F
+u1706/Y (AND3X1H9R)                                  0.04         1.01 F
+u2639/Y (INVX1H9R)                                   0.02         1.02 R
+u1645/Y (NOR2X1H9R)                                  0.02         1.05 F
+u1646/Y (AND2X1H9R)                                  0.03         1.08 F
+u1652/Y (OAI31X1H9R)                                 0.03         1.11 R
+u1700/Y (OA22X1H9R)                                  0.04         1.15 R
+u_compute_engine/temp_product_reg[31]/D (DFFRQX2H9R)
+                                                     0.00         1.15 R
+data arrival time                                                 1.15
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[31]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.15
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.23
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[29] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1692/Y (NOR2BX3H9R)                                 0.03         0.95 F
+u1693/Y (AND4X2H9R)                                  0.04         0.99 F
+u1694/Y (AND2X3H9R)                                  0.03         1.02 F
+u1701/Y (NOR2BX4H9R)                                 0.04         1.06 F
+u1716/Y (AOI211X0P7H9R)                              0.04         1.10 R
+u1717/Y (OAI21X1H9R)                                 0.02         1.12 F
+u1718/Y (OAI21X1H9R)                                 0.02         1.14 R
+u_compute_engine/temp_product_reg[29]/D (DFFRQX2H9R)
+                                                     0.00         1.14 R
+data arrival time                                                 1.14
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[29]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.14
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.23
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[30] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1692/Y (NOR2BX3H9R)                                 0.03         0.95 F
+u1693/Y (AND4X2H9R)                                  0.04         0.99 F
+u1694/Y (AND2X3H9R)                                  0.03         1.02 F
+u1701/Y (NOR2BX4H9R)                                 0.04         1.06 F
+u1702/Y (NAND2X1P4H9R)                               0.02         1.08 R
+u1703/Y (OAI211X1H9R)                                0.02         1.11 F
+u1711/Y (NAND4X1H9R)                                 0.03         1.14 R
+u_compute_engine/temp_product_reg[30]/D (DFFRQX2H9R)
+                                                     0.00         1.14 R
+data arrival time                                                 1.14
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[30]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.14
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.22
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[28] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1692/Y (NOR2BX3H9R)                                 0.03         0.95 F
+u1693/Y (AND4X2H9R)                                  0.04         0.99 F
+u1694/Y (AND2X3H9R)                                  0.03         1.02 F
+u1722/Y (AND2X1H9R)                                  0.04         1.06 F
+u1723/Y (NAND2X1H9R)                                 0.02         1.08 R
+u1724/Y (AOI21X1H9R)                                 0.02         1.10 F
+u1726/Y (OA21X0P7H9R)                                0.05         1.15 F
+u_compute_engine/temp_product_reg[28]/D (DFFRQX2H9R)
+                                                     0.00         1.15 F
+data arrival time                                                 1.15
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[28]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.02         0.93
+data required time                                                0.93
+------------------------------------------------------------------------
+data required time                                                0.93
+data arrival time                                                -1.15
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.22
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[27] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1692/Y (NOR2BX3H9R)                                 0.03         0.95 F
+u1693/Y (AND4X2H9R)                                  0.04         0.99 F
+u1694/Y (AND2X3H9R)                                  0.03         1.02 F
+u1722/Y (AND2X1H9R)                                  0.04         1.06 F
+u1723/Y (NAND2X1H9R)                                 0.02         1.08 R
+u1729/Y (NAND2X0P7H9R)                               0.02         1.10 F
+u1733/Y (OAI221X1H9R)                                0.03         1.13 R
+u_compute_engine/temp_product_reg[27]/D (DFFRQX2H9R)
+                                                     0.00         1.13 R
+data arrival time                                                 1.13
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[27]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -1.13
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.22
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[26] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1692/Y (NOR2BX3H9R)                                 0.03         0.95 F
+u1693/Y (AND4X2H9R)                                  0.04         0.99 F
+u1694/Y (AND2X3H9R)                                  0.03         1.02 F
+u1722/Y (AND2X1H9R)                                  0.04         1.06 F
+u1738/Y (OAI31X0P7H9R)                               0.04         1.10 R
+u1739/Y (OA21X0P7H9R)                                0.04         1.14 R
+u_compute_engine/temp_product_reg[26]/D (DFFRQX2H9R)
+                                                     0.00         1.14 R
+data arrival time                                                 1.14
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[26]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.14
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.22
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[25] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1692/Y (NOR2BX3H9R)                                 0.03         0.95 F
+u1693/Y (AND4X2H9R)                                  0.04         0.99 F
+u1694/Y (AND2X3H9R)                                  0.03         1.02 F
+u1741/Y (NOR2X0P5H9R)                                0.02         1.04 R
+u1742/Y (OAI21X0P5H9R)                               0.03         1.07 F
+u1746/Y (AOI22X1H9R)                                 0.03         1.10 R
+u_compute_engine/temp_product_reg[25]/D (DFFRX1H9R)
+                                                     0.00         1.10 R
+data arrival time                                                 1.10
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[25]/CK (DFFRX1H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -1.10
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.19
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[23] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1692/Y (NOR2BX3H9R)                                 0.03         0.95 F
+u1748/Y (NAND2X0P5H9R)                               0.03         0.99 R
+u1749/Y (NOR2BX1H9R)                                 0.03         1.01 F
+u1761/Y (OAI31X1H9R)                                 0.03         1.05 R
+u1762/Y (OA21X1H9R)                                  0.04         1.08 R
+u_compute_engine/temp_product_reg[23]/D (DFFRQX2H9R)
+                                                     0.00         1.08 R
+data arrival time                                                 1.08
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[23]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.08
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.16
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[24] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 R
+u1658/ZN (AOAI211X2H9R)                              0.03         0.13 F
+u1659/Y (AOI21X1H9R)                                 0.05         0.17 R
+u1663/Y (NOR3X1P4H9R)                                0.04         0.22 F
+u1666/ZN (OAOI211X2H9R)                              0.08         0.29 R
+u1668/ZN (OAOI211X2H9R)                              0.04         0.34 F
+u28483/Y (INVX1H9R)                                  0.02         0.35 R
+u28484/Y (INVX1H9R)                                  0.01         0.37 F
+u28320/ZN (OAOI211X2H9R)                             0.04         0.41 R
+u1672/Y (NOR3X1H9R)                                  0.04         0.45 F
+u1676/ZN (OAOI211X2H9R)                              0.06         0.51 R
+u1677/CO (CGENX1H9R)                                 0.05         0.56 R
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 R
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 R
+u1682/ZN (OAOI211X4H9R)                              0.03         0.69 F
+u1685/ZN (OAOI211X2H9R)                              0.06         0.75 R
+u1687/Y (OAI21X1H9R)                                 0.04         0.79 F
+u1688/CO (CGENX1H9R)                                 0.05         0.84 F
+u1689/CON (CGENCONAX2H9R)                            0.03         0.88 R
+u1690/Y (AND4X1P4H9R)                                0.04         0.92 R
+u1691/Y (NAND3X3H9R)                                 0.02         0.94 F
+u1692/Y (NOR2BX3H9R)                                 0.03         0.96 R
+u1748/Y (NAND2X0P5H9R)                               0.03         0.99 F
+u1749/Y (NOR2BX1H9R)                                 0.03         1.02 R
+u1751/Y (OAI21X1H9R)                                 0.02         1.04 F
+u1755/Y (AOI22X1H9R)                                 0.02         1.07 R
+u_compute_engine/temp_product_reg[24]/D (DFFRX1H9R)
+                                                     0.00         1.07 R
+data arrival time                                                 1.07
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[24]/CK (DFFRX1H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -1.07
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.16
+
+
+
+Beginpoint: u_compute_engine/cnt_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/u_mul8x8/pp_stage1_reg[10] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/cnt_reg[1]/CK (DFFRQX4H9R)          0.00         0.00 R
+u_compute_engine/cnt_reg[1]/Q (DFFRQX4H9R)           0.10         0.10 F
+u911/Y (XOR2X3H9R)                                   0.03         0.13 F
+u3882/Y (BUFX9H9R)                                   0.03         0.16 F
+u5655/Y (NAND2XBX3H9R)                               0.02         0.18 R
+u5656/Y (NAND2X4H9R)                                 0.02         0.19 F
+u924/Y (AND4X4H9R)                                   0.05         0.24 F
+u8846/Y (BUFX1P7H9R)                                 0.03         0.27 F
+u3954/Z (OAO211X4H9R)                                0.08         0.34 F
+u964/Y (AOI31X3H9R)                                  0.03         0.38 R
+u1028/Y (OAI31X3H9R)                                 0.03         0.41 F
+u1029/Y (AOI32X4H9R)                                 0.05         0.45 R
+u1030/Y (XOR3X2H9R)                                  0.08         0.53 F
+u1037/Y (OA21X3H9R)                                  0.04         0.57 F
+u8901/Y (BUFX1P4H9R)                                 0.03         0.60 F
+u1058/Y (XNOR3X1P4H9R)                               0.04         0.64 F
+u1187/Y (AO22X2H9R)                                  0.05         0.69 F
+u1218/Y (XNOR3X1H9R)                                 0.07         0.76 F
+u1220/Y (OAI21BX2H9R)                                0.03         0.79 R
+u1259/Y (XNOR3X0P5H9R)                               0.09         0.87 R
+u1260/Y (NOR2X1H9R)                                  0.02         0.89 F
+u1261/Y (NOR2X1H9R)                                  0.04         0.93 R
+u1262/CO (CGENX2H9R)                                 0.06         0.99 R
+u1304/Y (XNOR3X0P5H9R)                               0.07         1.06 R
+u_compute_engine/u_mul8x8/pp_stage1_reg[10]/D (DFFRQX2H9R)
+                                                     0.00         1.06 R
+data arrival time                                                 1.06
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/u_mul8x8/pp_stage1_reg[10]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.06
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.14
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[22] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 R
+u1658/ZN (AOAI211X2H9R)                              0.03         0.13 F
+u1659/Y (AOI21X1H9R)                                 0.05         0.17 R
+u1663/Y (NOR3X1P4H9R)                                0.04         0.22 F
+u1666/ZN (OAOI211X2H9R)                              0.08         0.29 R
+u1668/ZN (OAOI211X2H9R)                              0.04         0.34 F
+u28483/Y (INVX1H9R)                                  0.02         0.35 R
+u28484/Y (INVX1H9R)                                  0.01         0.37 F
+u28320/ZN (OAOI211X2H9R)                             0.04         0.41 R
+u1672/Y (NOR3X1H9R)                                  0.04         0.45 F
+u1676/ZN (OAOI211X2H9R)                              0.06         0.51 R
+u1677/CO (CGENX1H9R)                                 0.05         0.56 R
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 R
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 R
+u1682/ZN (OAOI211X4H9R)                              0.03         0.69 F
+u1685/ZN (OAOI211X2H9R)                              0.06         0.75 R
+u1687/Y (OAI21X1H9R)                                 0.04         0.79 F
+u1688/CO (CGENX1H9R)                                 0.05         0.84 F
+u1689/CON (CGENCONAX2H9R)                            0.03         0.88 R
+u1690/Y (AND4X1P4H9R)                                0.04         0.92 R
+u1691/Y (NAND3X3H9R)                                 0.02         0.94 F
+u1692/Y (NOR2BX3H9R)                                 0.03         0.96 R
+u1763/Y (OR2X0P5H9R)                                 0.03         0.99 R
+u1764/Y (NAND3BX1H9R)                                0.02         1.02 F
+u1768/Y (AOI22X1H9R)                                 0.02         1.04 R
+u_compute_engine/temp_product_reg[22]/D (DFFRX1H9R)
+                                                     0.00         1.04 R
+data arrival time                                                 1.04
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[22]/CK (DFFRX1H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -1.04
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.13
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[21] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1692/Y (NOR2BX3H9R)                                 0.03         0.95 F
+u1773/Y (OAI21X0P5H9R)                               0.03         0.99 R
+u1774/Y (OA21X1H9R)                                  0.04         1.02 R
+u_compute_engine/temp_product_reg[21]/D (DFFRQX2H9R)
+                                                     0.00         1.02 R
+data arrival time                                                 1.02
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[21]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.02
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.11
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[20] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1691/Y (NAND3X3H9R)                                 0.02         0.93 R
+u1780/Y (OAI2XB1X0P5H9R)                             0.05         0.98 R
+u1781/Y (OA21X1H9R)                                  0.04         1.01 R
+u_compute_engine/temp_product_reg[20]/D (DFFRQX2H9R)
+                                                     0.00         1.01 R
+data arrival time                                                 1.01
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[20]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.01
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.09
+
+
+
+Beginpoint: u_compute_engine/cnt_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/u_mul8x8/pp_stage1_reg[9] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/cnt_reg[1]/CK (DFFRQX4H9R)          0.00         0.00 R
+u_compute_engine/cnt_reg[1]/Q (DFFRQX4H9R)           0.10         0.10 F
+u911/Y (XOR2X3H9R)                                   0.03         0.13 F
+u3882/Y (BUFX9H9R)                                   0.03         0.16 F
+u5655/Y (NAND2XBX3H9R)                               0.02         0.18 R
+u5656/Y (NAND2X4H9R)                                 0.02         0.19 F
+u924/Y (AND4X4H9R)                                   0.05         0.24 F
+u8846/Y (BUFX1P7H9R)                                 0.03         0.27 F
+u3954/Z (OAO211X4H9R)                                0.08         0.34 F
+u964/Y (AOI31X3H9R)                                  0.03         0.38 R
+u1028/Y (OAI31X3H9R)                                 0.03         0.41 F
+u1029/Y (AOI32X4H9R)                                 0.05         0.45 R
+u1030/Y (XOR3X2H9R)                                  0.08         0.53 F
+u1037/Y (OA21X3H9R)                                  0.04         0.57 F
+u8901/Y (BUFX1P4H9R)                                 0.03         0.60 F
+u1058/Y (XNOR3X1P4H9R)                               0.04         0.64 F
+u1187/Y (AO22X2H9R)                                  0.05         0.69 F
+u1191/CON (CGENCONAX2H9R)                            0.04         0.73 R
+u1209/Y (XOR2X2H9R)                                  0.05         0.77 R
+u1221/ZN (OAI2BB1X4H9R)                              0.05         0.82 R
+u1222/Y (OAI22X4H9R)                                 0.02         0.85 F
+u1253/Y (XOR2X0P5H9R)                                0.04         0.89 F
+u1254/Y (XNOR2X0P7H9R)                               0.04         0.93 F
+u1305/Y (XOR3X0P5H9R)                                0.08         1.01 R
+u_compute_engine/u_mul8x8/pp_stage1_reg[9]/D (DFFRQX2H9R)
+                                                     0.00         1.01 R
+data arrival time                                                 1.01
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/u_mul8x8/pp_stage1_reg[9]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -1.01
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.09
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[19] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1775/Y (NAND2X0P5H9R)                               0.03         0.94 R
+u1786/Y (NAND2X1H9R)                                 0.02         0.96 F
+u1788/Y (AOI22X1H9R)                                 0.03         0.98 R
+u_compute_engine/temp_product_reg[19]/D (DFFRX1H9R)
+                                                     0.00         0.98 R
+data arrival time                                                 0.98
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[19]/CK (DFFRX1H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -0.98
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.07
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[17] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 R
+u1658/ZN (AOAI211X2H9R)                              0.03         0.13 F
+u1659/Y (AOI21X1H9R)                                 0.05         0.17 R
+u1663/Y (NOR3X1P4H9R)                                0.04         0.22 F
+u1666/ZN (OAOI211X2H9R)                              0.08         0.29 R
+u1668/ZN (OAOI211X2H9R)                              0.04         0.34 F
+u28483/Y (INVX1H9R)                                  0.02         0.35 R
+u28484/Y (INVX1H9R)                                  0.01         0.37 F
+u28320/ZN (OAOI211X2H9R)                             0.04         0.41 R
+u1672/Y (NOR3X1H9R)                                  0.04         0.45 F
+u1676/ZN (OAOI211X2H9R)                              0.06         0.51 R
+u1677/CO (CGENX1H9R)                                 0.05         0.56 R
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 R
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 R
+u1682/ZN (OAOI211X4H9R)                              0.03         0.69 F
+u1685/ZN (OAOI211X2H9R)                              0.06         0.75 R
+u1687/Y (OAI21X1H9R)                                 0.04         0.79 F
+u1688/CO (CGENX1H9R)                                 0.05         0.84 F
+u1689/CON (CGENCONAX2H9R)                            0.03         0.88 R
+u1800/Y (NAND2X0P5H9R)                               0.03         0.90 F
+u1801/Y (XOR2X0P7H9R)                                0.04         0.94 F
+u1806/Y (AOI221X1H9R)                                0.04         0.97 R
+u_compute_engine/temp_product_reg[17]/D (DFFRQX2H9R)
+                                                     0.00         0.97 R
+data arrival time                                                 0.97
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[17]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -0.97
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.06
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[18] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1690/Y (AND4X1P4H9R)                                0.04         0.90 F
+u1797/Y (OAI21X0P5H9R)                               0.03         0.94 R
+u1798/Y (OA21X1H9R)                                  0.04         0.97 R
+u_compute_engine/temp_product_reg[18]/D (DFFRQX2H9R)
+                                                     0.00         0.97 R
+data arrival time                                                 0.97
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[18]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -0.97
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.06
+
+
+
+Beginpoint: u_compute_engine/cnt_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/u_mul8x8/pp_stage1_reg[8] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/cnt_reg[1]/CK (DFFRQX4H9R)          0.00         0.00 R
+u_compute_engine/cnt_reg[1]/Q (DFFRQX4H9R)           0.10         0.10 F
+u911/Y (XOR2X3H9R)                                   0.03         0.13 F
+u3882/Y (BUFX9H9R)                                   0.03         0.16 F
+u5655/Y (NAND2XBX3H9R)                               0.02         0.18 R
+u5656/Y (NAND2X4H9R)                                 0.02         0.19 F
+u924/Y (AND4X4H9R)                                   0.05         0.24 F
+u8846/Y (BUFX1P7H9R)                                 0.03         0.27 F
+u3954/Z (OAO211X4H9R)                                0.08         0.34 F
+u964/Y (AOI31X3H9R)                                  0.03         0.38 R
+u1028/Y (OAI31X3H9R)                                 0.03         0.41 F
+u1029/Y (AOI32X4H9R)                                 0.05         0.45 R
+u1030/Y (XOR3X2H9R)                                  0.08         0.53 F
+u1037/Y (OA21X3H9R)                                  0.04         0.57 F
+u8901/Y (BUFX1P4H9R)                                 0.03         0.60 F
+u1058/Y (XNOR3X1P4H9R)                               0.04         0.64 F
+u1061/Z (AO211X4H9R)                                 0.07         0.71 F
+u1219/Y (AOI32X2H9R)                                 0.03         0.74 R
+u1255/Y (NOR2X0P5H9R)                                0.03         0.77 F
+u1256/Y (XNOR2X0P5H9R)                               0.03         0.81 F
+u1257/Z (OAO211X0P5H9R)                              0.08         0.89 F
+u1306/Y (NOR2X0P5H9R)                                0.03         0.92 R
+u2405/Y (XOR2X0P5H9R)                                0.03         0.95 R
+u_compute_engine/u_mul8x8/pp_stage1_reg[8]/D (DFFRQX2H9R)
+                                                     0.00         0.95 R
+data arrival time                                                 0.95
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/u_mul8x8/pp_stage1_reg[8]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -0.95
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.03
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[16] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 F
+u1658/ZN (AOAI211X2H9R)                              0.04         0.14 R
+u1661/Y (AOI31X1H9R)                                 0.04         0.18 F
+u1662/ZN (OAOI211X2H9R)                              0.07         0.25 R
+u1666/ZN (OAOI211X2H9R)                              0.04         0.30 F
+u1668/ZN (OAOI211X2H9R)                              0.07         0.37 R
+u1669/Y (NOR3X1H9R)                                  0.05         0.42 F
+u1673/ZN (OAOI211X2H9R)                              0.06         0.48 R
+u1676/ZN (OAOI211X2H9R)                              0.03         0.52 F
+u1677/CO (CGENX1H9R)                                 0.05         0.56 F
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 F
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 F
+u1683/Y (OAI211X1H9R)                                0.04         0.70 R
+u1685/ZN (OAOI211X2H9R)                              0.03         0.74 F
+u1687/Y (OAI21X1H9R)                                 0.04         0.78 R
+u1688/CO (CGENX1H9R)                                 0.05         0.83 R
+u1689/CON (CGENCONAX2H9R)                            0.03         0.86 F
+u1800/Y (NAND2X0P5H9R)                               0.03         0.89 R
+u1814/Y (NAND2X0P5H9R)                               0.02         0.91 F
+u1815/Y (AOI22X0P5H9R)                               0.03         0.94 R
+u_compute_engine/temp_product_reg[16]/D (DFFRX1H9R)
+                                                     0.00         0.94 R
+data arrival time                                                 0.94
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[16]/CK (DFFRX1H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -0.94
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.03
+
+
+
+Beginpoint: u_compute_engine/u_mul8x8/prod_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/temp_product_reg[15] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/u_mul8x8/prod_reg[1]/CK (DFFRX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/u_mul8x8/prod_reg[1]/Q (DFFRX2H9R)
+                                                     0.10         0.10 R
+u1658/ZN (AOAI211X2H9R)                              0.03         0.13 F
+u1659/Y (AOI21X1H9R)                                 0.05         0.17 R
+u1663/Y (NOR3X1P4H9R)                                0.04         0.22 F
+u1666/ZN (OAOI211X2H9R)                              0.08         0.29 R
+u1668/ZN (OAOI211X2H9R)                              0.04         0.34 F
+u28483/Y (INVX1H9R)                                  0.02         0.35 R
+u28484/Y (INVX1H9R)                                  0.01         0.37 F
+u28320/ZN (OAOI211X2H9R)                             0.04         0.41 R
+u1672/Y (NOR3X1H9R)                                  0.04         0.45 F
+u1676/ZN (OAOI211X2H9R)                              0.06         0.51 R
+u1677/CO (CGENX1H9R)                                 0.05         0.56 R
+u1679/Y (OAI2XB1X0P5H9R)                             0.05         0.61 R
+u1681/Y (OR2X0P5H9R)                                 0.05         0.66 R
+u1682/ZN (OAOI211X4H9R)                              0.03         0.69 F
+u1685/ZN (OAOI211X2H9R)                              0.06         0.75 R
+u1687/Y (OAI21X1H9R)                                 0.04         0.79 F
+u1688/CO (CGENX1H9R)                                 0.05         0.84 F
+u1824/Y (XNOR2X0P5H9R)                               0.03         0.87 R
+u1825/Y (NAND3BX0P5H9R)                              0.02         0.90 F
+u1826/Y (OAI221X0P5H9R)                              0.03         0.93 R
+u_compute_engine/temp_product_reg[15]/D (DFFRX1H9R)
+                                                     0.00         0.93 R
+data arrival time                                                 0.93
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/temp_product_reg[15]/CK (DFFRX1H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.04         0.91
+data required time                                                0.91
+------------------------------------------------------------------------
+data required time                                                0.91
+data arrival time                                                -0.93
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.02
+
+
+
+Beginpoint: u_compute_engine/global_acc_reg[0] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/global_acc_reg[20] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/global_acc_reg[0]/CK (DFFRQX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/global_acc_reg[0]/Q (DFFRQX2H9R)
+                                                     0.09         0.09 R
+u1943/Y (NAND3X0P5H9R)                               0.04         0.12 F
+u1946/Y (OAI22X1H9R)                                 0.04         0.16 R
+u1947/Y (OR2X0P5H9R)                                 0.04         0.20 R
+u25908/Y (AOI222X0P5H9R)                             0.04         0.24 F
+u25909/Y (INVX0P5H9R)                                0.02         0.26 R
+u1951/Y (OAI211X1H9R)                                0.03         0.29 F
+u1954/Y (OAI21X1H9R)                                 0.03         0.32 R
+u1955/CON (CGENCONAX1H9R)                            0.03         0.34 F
+u1957/CON (CGENCONAX1H9R)                            0.03         0.38 R
+u1959/CON (CGENCONAX1H9R)                            0.03         0.41 F
+u1960/Y (OAI2XB1X0P5H9R)                             0.04         0.45 F
+u1962/Y (OAI211X1H9R)                                0.02         0.47 R
+u1963/Y (OAI211X1H9R)                                0.03         0.50 F
+u1965/CON (CGENCONAX1H9R)                            0.04         0.55 R
+u1966/Y (AOI21X1H9R)                                 0.03         0.57 F
+u1967/Y (NAND3BX1H9R)                                0.04         0.61 F
+u1972/Y (AOI31X1H9R)                                 0.04         0.65 R
+u1975/Y (AND2X1H9R)                                  0.04         0.69 R
+u1977/CON (CGENCONAX1H9R)                            0.02         0.71 F
+u1978/Y (OAI21X1H9R)                                 0.03         0.74 R
+u1980/CO (CGENX1H9R)                                 0.04         0.78 R
+u1981/CON (CGENCONAX1H9R)                            0.02         0.80 F
+u1984/ZN (OAOI211X2H9R)                              0.05         0.85 R
+u1986/Y (OAI2XB1X0P5H9R)                             0.05         0.90 R
+u1987/Y (AO21X0P5H9R)                                0.04         0.93 R
+u_compute_engine/global_acc_reg[20]/D (DFFRQX2H9R)
+                                                     0.00         0.93 R
+data arrival time                                                 0.93
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/global_acc_reg[20]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.03         0.92
+data required time                                                0.92
+------------------------------------------------------------------------
+data required time                                                0.92
+data arrival time                                                -0.93
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.02
+
+
+
+Beginpoint: u_compute_engine/global_acc_reg[0] (re-triggered flip-flop clocked by clk)
+Endpoint: u_compute_engine/global_acc_reg[19] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                       0.00         0.00
+clock tree delay (ideal)                             0.00         0.00
+u_compute_engine/global_acc_reg[0]/CK (DFFRQX2H9R)
+                                                     0.00         0.00 R
+u_compute_engine/global_acc_reg[0]/Q (DFFRQX2H9R)
+                                                     0.09         0.09 F
+u1943/Y (NAND3X0P5H9R)                               0.04         0.14 R
+u1946/Y (OAI22X1H9R)                                 0.03         0.17 F
+u1947/Y (OR2X0P5H9R)                                 0.04         0.21 F
+u25908/Y (AOI222X0P5H9R)                             0.05         0.26 R
+u25909/Y (INVX0P5H9R)                                0.02         0.28 F
+u1951/Y (OAI211X1H9R)                                0.03         0.31 R
+u1954/Y (OAI21X1H9R)                                 0.03         0.33 F
+u1955/CON (CGENCONAX1H9R)                            0.03         0.36 R
+u1957/CON (CGENCONAX1H9R)                            0.03         0.39 F
+u1959/CON (CGENCONAX1H9R)                            0.03         0.43 R
+u1960/Y (OAI2XB1X0P5H9R)                             0.05         0.47 R
+u1962/Y (OAI211X1H9R)                                0.02         0.50 F
+u1963/Y (OAI211X1H9R)                                0.03         0.53 R
+u1965/CON (CGENCONAX1H9R)                            0.04         0.57 F
+u1966/Y (AOI21X1H9R)                                 0.03         0.60 R
+u1967/Y (NAND3BX1H9R)                                0.04         0.63 R
+u1972/Y (AOI31X1H9R)                                 0.04         0.67 F
+u1975/Y (AND2X1H9R)                                  0.04         0.71 F
+u1977/CON (CGENCONAX1H9R)                            0.02         0.73 R
+u1978/Y (OAI21X1H9R)                                 0.03         0.76 F
+u1980/CO (CGENX1H9R)                                 0.04         0.80 F
+u1981/CON (CGENCONAX1H9R)                            0.03         0.83 R
+u1984/ZN (OAOI211X2H9R)                              0.03         0.86 F
+u1988/Z (OAO211X0P5H9R)                              0.07         0.93 F
+u_compute_engine/global_acc_reg[19]/D (DFFRQX2H9R)
+                                                     0.00         0.93 F
+data arrival time                                                 0.93
+
+clock clk (re)                                       1.00         1.00
+clock tree delay (ideal)                             0.00         1.00
+u_compute_engine/global_acc_reg[19]/CK (DFFRQX2H9R)
+                                                     0.00         1.00 R
+clock uncertainty                                   -0.05         0.95
+library setup time                                  -0.02         0.93
+data required time                                                0.93
+------------------------------------------------------------------------
+data required time                                                0.93
+data arrival time                                                -0.93
+------------------------------------------------------------------------
+slack (VIOLATED)                                                 -0.00
+
+
+
+*******************************************************************************
+* Report  : Minimal/hold time constraint                                      *
+* Command : analyze_constraint -verbose -all_violators >                      *
+*         : /headless/Desktop/data/syn_try/report/cstr.rpt                    *
+* Design  : mac16                                                             *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 2:34 PM, 13-Apr-26                                                *
+*******************************************************************************
+
+
+
+*******************************************************************************
+* Report  : Minimum Pulse Width of Pins                                       *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+*******************************************************************************
+* Report  : Minimum Period of Pins                                            *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+*******************************************************************************
+* Report  : Maximum Capacitance of Cells                                      *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+*******************************************************************************
+* Report  : Maximum Capacitance of Nets                                       *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+
+
+
+*******************************************************************************
+* Report  : Maximum Transition of Pins                                        *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+
+*******************************************************************************
+* Report  : Maximum Transition of Nets                                        *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+
+*******************************************************************************
+* Report  : Minimum Transition of Pins                                        *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+
+*******************************************************************************
+* Report  : Minimum Transition of Nets                                        *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+*******************************************************************************
+* Report  : Maximum Fanout of Cells                                           *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+*******************************************************************************
+* Report  : Maximum Fanout of Nets                                            *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+*******************************************************************************
+* Report  : Top Port Connection Class                                         *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+
+*******************************************************************************
+* Report  : Connection Class                                                  *
+* Design  : mac16                                                             *
+*******************************************************************************
+

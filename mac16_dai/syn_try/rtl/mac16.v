@@ -78,7 +78,7 @@ module mac16 (
         .inB        (inB),
         .data_A     (rx_data_A),    // out: 并行 16bit
         .data_B     (rx_data_B),    // out: 并行 16bit
-        .valid_out  (rx_valid)      // out: 一组收齐
+        .valid_out  (rx_valid)      // out: 一组收齐脉冲
     );
 
     // --------------------------------------------------------
