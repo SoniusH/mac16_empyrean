@@ -29,7 +29,7 @@ compile_lib -f lib ${lib_dir}/ics55_LLSC_H9CR_typ_tt_1p2_25_nldm.lib
 
 set target_lib {ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm.lib}
 
-set link_priority "* ics55_LLSC_H9CR_ff_cbest_1p32_125_nldm" 
+set link_priority "* ics55_LLSC_H9CR_ss_rcworst_1p08_125_nldm" 
 
 
 
