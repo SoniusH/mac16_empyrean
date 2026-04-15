@@ -2,4 +2,4 @@ lib_dir工艺库路径
 /headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/liberty/lib
 
 Data
-/headless/Desktop/data
+headless/Desktop/data

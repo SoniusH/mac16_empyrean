@@ -1,0 +1,7 @@
+set verilog_files  "../From_APR/route.v"
+set lib_file(fast) "../../../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ff_rcbest_1p32_m40_nldm.lib"
+set lib_file(slow) "../../../Common/ics55_LLSC_H9CR_0917/liberty/lib/ics55_LLSC_H9CR_ss_cworst_1p08_m40_nldm.lib"
+set sdc_file(func) "../From_APR/route.sdc"
+set sdc_file(test) "../From_APR/route.sdc"
+set spef_file(rcbest)   "../From_APR/route_rcbest_1p32_m40c.spef.gz"
+set spef_file(rcworst)  "../From_APR/route_cworst_1p08_m40c.spef.gz"
