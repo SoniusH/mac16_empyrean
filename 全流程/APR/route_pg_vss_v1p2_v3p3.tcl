@@ -37,3 +37,10 @@ set_options route_special.core_pin_target core_ring
 route_special -nets {V1P2 VSS}
 
 check_pg_vias
+
+
+always @(posedge clk) begin
+    a <= 1'b1;
+    if(a == 1'b1)begin
+    end
+end

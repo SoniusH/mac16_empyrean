@@ -1,0 +1,95 @@
+
+
+*******************************************************************************
+* Report  : Timing                                                            *
+* Command : analyze_timing -delay_type max -input_pins -precision 6           *
+*         : > $rpt_dir/timing.rpt                                            *
+* Design  : mac16                                                             *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 3:21 PM, 17-Apr-26                                                *
+*******************************************************************************
+*******************************************************************************
+* MAX Timing Analysis                                                         *
+* Analysis type : bc_wc                                                       *
+* Environment Library : ics55_LLSC_H9CR_ss_rcworst_1p08_125                   *
+* Operating Conditions: ETSCA_N55_H9BR_ss_mos_RCworst_1.08_125                *
+* Wire Load Library : ics55_LLSC_H9CR_ss_rcworst_1p08_125                     *
+* Wire Load Model Mode:          top                                          *
+* Wire Load Model From:          default                                      *
+* Wire Load Model On Top Design:                                              *
+*******************************************************************************
+*******************************************************************************
+* Legend :                                                                    *
+* re: rising-edge                                                             *
+* fe: falling-edge                                                            *
+* pl: positive-level                                                          *
+* nl: negative-level                                                          *
+* ': inverted clock                                                           *
+* *: delay is annotated from SDF                                              *
+* &: delay is from BBox/RC-tree                                               *
+* #: delay is set by command                                                  *
+*******************************************************************************
+
+
+*******************************************************************************
+* Report  : Critical paths for each clock group                               *
+* Design  : mac16                                                             *
+*******************************************************************************
+
+
+Beginpoint: u_multiplier/B_shift_reg[1] (re-triggered flip-flop clocked by clk)
+Endpoint: u_multiplier/acc_high_reg[7] (re-triggered flip-flop clocked by clk)
+Path Group: clk
+Delay Type: max
+
+Point (Gate Type)                                    Inc.         Path  
+------------------------------------------------------------------------
+clock clk (re)                                   0.000000     0.000000
+clock tree delay (ideal)                         0.000000     0.000000
+u_multiplier/B_shift_reg[1]/CK (DFFRX4H9R)       0.000000     0.000000 R
+u_multiplier/B_shift_reg[1]/Q (DFFRX4H9R)        0.244568     0.244568 F
+u9080/A (INVX1H9R)                               0.000000     0.244568 F
+u9080/Y (INVX1H9R)                               0.051718     0.296286 R
+u8622/A (INVX3H9R)                               0.000000     0.296286 R
+u8622/Y (INVX3H9R)                               0.050595     0.346881 F
+u21203/A (BUFX1P4H9R)                            0.000000     0.346881 F
+u21203/Y (BUFX1P4H9R)                            0.062311     0.409192 F
+u17321/B0 (OAI2XB1X2H9R)                         0.000000     0.409192 F
+u17321/Y (OAI2XB1X2H9R)                          0.035074     0.444266 R
+u2982/B0 (OAI22X2H9R)                            0.000000     0.444266 R
+u2982/Y (OAI22X2H9R)                             0.058872     0.503139 F
+u13696/A (INVX1H9R)                              0.000000     0.503139 F
+u13696/Y (INVX1H9R)                              0.044369     0.547507 R
+u13697/A (INVX2H9R)                              0.000000     0.547507 R
+u13697/Y (INVX2H9R)                              0.047178     0.594685 F
+u3012/C (MUXIT4X2H9R)                            0.000000     0.594685 F
+u3012/Y (MUXIT4X2H9R)                            0.163291     0.757976 R
+u3013/B (MUXT2X1P4H9R)                           0.000000     0.757976 R
+u3013/Y (MUXT2X1P4H9R)                           0.092024     0.850001 R
+u3019/A1N (OAI2XB1X3H9R)                         0.000000     0.850001 R
+u3019/Y (OAI2XB1X3H9R)                           0.112626     0.962627 R
+u3023/A0 (AOI21BX1H9R)                           0.000000     0.962627 R
+u3023/Y (AOI21BX1H9R)                            0.082130     1.044757 F
+u3028/A2 (AOAI211X4H9R)                          0.000000     1.044757 F
+u3028/ZN (AOAI211X4H9R)                          0.094512     1.139270 R
+u3032/A (NOR2XBX3H9R)                            0.000000     1.139270 R
+u3032/Y (NOR2XBX3H9R)                            0.051822     1.191092 F
+u3038/A1 (OAO211X4H9R)                           0.000000     1.191092 F
+u3038/Z (OAO211X4H9R)                            0.188343     1.379435 F
+u3046/A0 (OAI22X1H9R)                            0.000000     1.379435 F
+u3046/Y (OAI22X1H9R)                             0.064661     1.444096 R
+u_multiplier/acc_high_reg[7]/D (DFFRX2H9R)       0.000000     1.444096 R
+data arrival time                                             1.444096
+
+clock clk (re)                                   1.000000     1.000000
+clock tree delay (ideal)                         0.000000     1.000000
+u_multiplier/acc_high_reg[7]/CK (DFFRX2H9R)      0.000000     1.000000 R
+clock uncertainty                               -0.050000     0.950000
+library setup time                              -0.115816     0.834184
+data required time                                            0.834184
+------------------------------------------------------------------------
+data required time                                            0.834184
+data arrival time                                            -1.444096
+------------------------------------------------------------------------
+slack (VIOLATED)                                             -0.609912
+

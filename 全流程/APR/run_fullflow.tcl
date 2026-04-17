@@ -8,8 +8,8 @@
 #read_lef ./lef/N551P6M_fix_NDR.lef
 #read_lef ./lef/ics55_LLSC_H9CR_ant.lef
 
-read_lef { ../../../Common/ics55_LLSC_H9CR_0917/lef/N551P6M_fix_NDR.lef         \
-           ../../../Common/ics55_LLSC_H9CR_0917/lef/ics55_LLSC_H9CR_ant.lef }
+read_lef { /headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/lef/N551P6M_fix_NDR.lef         \
+           /headless/Desktop/digitial/digital_env/Common/ics55_LLSC_H9CR_0917/lef/ics55_LLSC_H9CR_ant.lef }
 read_verilog ../FromSYN/mapped.v
 read_mmmc_file ./mmmc.tcl
 
@@ -17,7 +17,7 @@ read_mmmc_file ./mmmc.tcl
 #initialize_floorplan -site core9 -utilization 0.7 -core_to_die_offset { 3 3 3 3 }
 #
 #4bitMac Golden: floorPlan -b <0.0 0.0 100 99 0 0 100 99 5.4 5.4 94.6 93.6> -fplanOrigin llcorner
-initialize_floorplan -site core9 -boundary {5.4 5.4 90.6 88.6} -core_to_die_offset {3.4 3.4 3.4 4.4}
+initialize_floorplan -site core9 -boundary {5.4 5.4 90 90} -core_to_die_offset {3.4 3.4 3.4 4.4}
 
 place_io_pins
 source ./update_io_pin.tcl

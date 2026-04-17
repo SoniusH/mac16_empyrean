@@ -1,0 +1,46 @@
+
+
+*******************************************************************************
+* Report  : Quality of results                                                *
+* Command : analyze_qor -summary -precision 6 >                               *
+*         : /headless/Desktop/data/mac16_try_2/report/qor.rpt                 *
+* Design  : mac16                                                             *
+* Version : 2506_4e37.rel                                                     *
+* Date    : 3:21 PM, 17-Apr-26                                                *
+*******************************************************************************
+Timing
+---------------------------------------------
+Worst negative slack:              -0.609912
+Total negative slack:             -32.235867
+No. of violating paths:           250.000000
+---------------------------------------------
+
+Cell Count
+---------------------------------------------
+Hierarchial cell count:                    0
+Hierarchial port count:                    0
+Leaf cell count:                        2934
+Sequential cell count:                   734
+Buffer cell count:                        32
+Inverter cell count:                     465
+---------------------------------------------
+
+Area
+---------------------------------------------
+Combinational area:               5616.360059
+Sequential area:                  7735.320051
+Buffer cell area:                  72.000002
+Inverter cell area:               624.600019
+Net area:                           0.000000
+---------------------------------------------
+Cell area:                        13351.680110
+Design area:                      13351.680110
+
+Design Rules
+---------------------------------------------
+Total number of nets:                   3464
+Max transition violations:                 0
+Max capacitance violations:                0
+Max fanout violations:                     0
+---------------------------------------------
+
